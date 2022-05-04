@@ -4,7 +4,7 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
@@ -240,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="FORCETS.html"><code class="docutils literal notranslate"><span class="pre">FORCETS</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="FORCETS.html#id2">FORCETS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FORCETS.html#forcets-2">FORCETS</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="FREQCY.html"><code class="docutils literal notranslate"><span class="pre">FREQCY</span></code></a></li>
@@ -573,7 +573,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Bibliography</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api.html">API Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../impact.html">Scientific Impact</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../impact.html#id1">2021</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../impact.html#section-1">2021</a></li>
 </ul>
 </li>
 </ul>
@@ -650,14 +650,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>This website is presently under development.
-The active website for MOPAC is still <a class="reference external" href="http://openmopac.net">http://openmopac.net</a> until the official open-source release of MOPAC in late 2021.</p>
-</div>
-<section id="indo">
-<span id="id1"></span><h1>INDO<a class="headerlink" href="#indo" title="Permalink to this headline">¶</a></h1>
-<p>Use the INDO/S (a.k.a. ZINDO/S) semiempirical model <span id="id2">[<a class="reference internal" href="../bibliography.html#id4">13</a>]</span> instead of the default model, PM7 <span id="id3">[<a class="reference internal" href="../bibliography.html#id23">19</a>]</span>.
+The primary website for MOPAC is still <a class="reference external" href="http://openmopac.net">http://openmopac.net</a> until the majority of its contents have been migrated here.</p>
+</aside>
+<section id="indo-1">
+<span id="indo"></span><h1>INDO<a class="headerlink" href="#indo-1" title="Permalink to this headline">¶</a></h1>
+<p>Use the INDO/S (a.k.a. ZINDO/S) semiempirical model <span id="pending-xref-1">[<a class="reference internal" href="../bibliography.html#citation-3">13</a>]</span> instead of the default model, PM7 <span id="pending-xref-2">[<a class="reference internal" href="../bibliography.html#citation-22">19</a>]</span>.
 This INDO-based model is fit for spectroscopic applications,
-whereas all the other models available in MOPAC are based on the MNDO form <span id="id4">[<a class="reference internal" href="../bibliography.html#id26">4</a>]</span> and fit for thermochemistry applications.
-A wide range of excited-state properties have been implemented in MOPAC’s INDO functionality <span id="id5">[<a class="reference internal" href="../bibliography.html#id6">7</a>]</span>,
+whereas all the other models available in MOPAC are based on the MNDO form <span id="pending-xref-3">[<a class="reference internal" href="../bibliography.html#citation-25">4</a>]</span> and fit for thermochemistry applications.
+A wide range of excited-state properties have been implemented in MOPAC’s INDO functionality <span id="pending-xref-4">[<a class="reference internal" href="../bibliography.html#citation-5">7</a>]</span>,
 and it shares some features and keywords with the Multi-Electron Configuration Interaction capabilities of MOPAC.
 Ground-state properties (e.g. total energies, forces, vibrational frequencies, geometry optimization) are not available for INDO-based calculations.</p>
 <p>The INDO-form Hamiltonian can be used with other parameters besides the default INDO/S model through the <a class="reference internal" href="EXTERNAL.html#external"><span class="std std-ref">EXTERNAL</span></a> keyword.</p>
@@ -665,7 +665,7 @@ Ground-state properties (e.g. total energies, forces, vibrational frequencies, g
 The INDO/S model was originally fit for use with an active space of single-electron excitations (<a class="reference internal" href="CIS.html#cis"><span class="std std-ref">CIS</span></a>).
 MOPAC’s implementation also allows for the use of double-electron excitations (<a class="reference internal" href="CISD.html#cisd"><span class="std std-ref">CISD</span></a>) and more general multi-reference active spaces (<a class="reference internal" href="MRCI.html#mrci"><span class="std std-ref">MRCI</span></a>)
 to enable more accurate modeling of excited states with multi-electron excitation character.</p>
-<p>INDO calculations in MOPAC are compatible with the COSMO solvation model <span id="id6">[<a class="reference internal" href="../bibliography.html#id3">9</a>]</span>,
+<p>INDO calculations in MOPAC are compatible with the COSMO solvation model <span id="pending-xref-5">[<a class="reference internal" href="../bibliography.html#citation-2">9</a>]</span>,
 which enables the calculation of solvachromatic shifts.
 INDO calculations in MOPAC are incompatible with unrestricted orbitals (<a class="reference internal" href="UHF.html#uhf"><span class="std std-ref">UHF</span></a>)
 but compatible with restricted open-shell orbitals (<a class="reference internal" href="RHF.html#rhf"><span class="std std-ref">RHF</span></a>).
