@@ -38,7 +38,6 @@ rst_prolog = """
 .. note::
   This website is presently under development.
   The primary website for MOPAC is still http://openmopac.net until the majority of its contents have been migrated here.
-
 """
 
 # Main bibliography for the documentation (excluding scientific impact list)

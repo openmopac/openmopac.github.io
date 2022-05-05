@@ -33,6 +33,7 @@ Note the methodology for calculating these metrics in the page source.
   cite-code = paper cites the MOPAC code in some way (QCPE, journal, manual, or website)
   cite-model = paper cites the semiempirical model that they use
   developer = paper about development of a feature in MOPAC or tightly coupled with MOPAC
+  drc = used dynamical reaction coordinate method
   dubious = paper claiming to use MOPAC for something it isn't capable of doing [e.g. DFT calculations]
   foreign = paper is written in a foreign language
   gui = MOPAC was used through a GUI,
@@ -40,12 +41,14 @@ Note the methodology for calculating these metrics in the page source.
         = chemdes [http://www.scbdd.com/chemdes/]
         = codessa [http://www.semichem.com/codessa/default.php] (dubious: this is a GUI for AMPAC, not MOPAC)
         = drudit [https://www.drudit.com/]
+        = gabedit [http://gabedit.sourceforge.net]
         = insight [https://www.3ds.com/products-services/biovia/products/data-science/biovia-insight/]
         = jmol [http://jmol.sourceforge.net/]
         = lumpac [https://lumpac.pro.br]
         = maestro [https://www.schrodinger.com/products/maestro]
         = mercury [https://www.ccdc.cam.ac.uk/solutions/csd-core/components/mercury/]
         = moe [https://www.chemcomp.com/index.htm]
+        = molclus [http://www.keinsci.com/research/molclus.html]
         = scigress [https://www.fqs.pl/en/chemistry/products/scigress]
         = spartan [https://www.wavefun.com/products/spartan.html]
         = sybylx [https://www.g6g-softwaredirectory.com/bio/proteomics/structure-modeling/20710-Tripos-SYBYL-X-Suite.php]
