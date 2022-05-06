@@ -1,4 +1,4 @@
-# precise version requirements, the current versions at the time of this website's creation
-sphinx==3.5.0
+# precise version requirements to mirror a local development enviroment
+sphinx==4.2.0
 sphinx-rtd-theme==0.5.1
 sphinxcontrib-bibtex==2.2.0
