@@ -1,0 +1,101 @@
+<html><head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTDKH6F');</script>
+<!-- End Google Tag Manager -->
+
+
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/><title>Individual Methods in MOPAC</title>
+</head>
+<body link="#0000ff" vlink="#0000ff">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDKH6F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+&nbsp; (<a href="Discussion_topics.html">back to discussion topics</a>)<h1 align="center" dir="rtl">
+Individual Methods in MOPAC</h1>
+<p>Only the more recent methods <a href="../Manual/pm6.html"><tt>PM6</tt></a> 
+and <a href="../Manual/pm7.html"><tt>PM7</tt></a> 
+will be addressed here, older methods, such as
+<a href="../Manual/pm3.html"><tt>PM3</tt></a>, and 
+more specialized methods, such as
+<a href="../Manual/rm1_key.html"><tt>RM1</tt></a>, 
+will not be described.</p>
+<p>The methods in MOPAC are designed to be general-purpose, that is, they are 
+intended for the study of a very wide range of chemical systems.&nbsp; There are 
+biases in the recent methods towards increased emphasis on heats of formation 
+and geometry, and also biases in favor of organic chemistry, but with these 
+exceptions the fundamental objective of all the methods is the same - to model 
+chemical phenomena.</p>
+<p>PM6 provides a good example of how methods evolve.&nbsp; Its 
+direct ancestor was PM3.&nbsp; When PM3 was first released, it 
+marked an improvement over its immediate ancestor,
+<a href="../Manual/am1.html"><tt>AM1</tt></a>, 
+but as time went by several&nbsp; faults were found in PM3.&nbsp; These faults were 
+collected into a list, and an attempt was made to correct them when the project 
+that resulted in PM6
+was started. Put another way, PM6
+was designed to correct the faults in PM3.</p>
+<p>At the time of its release, PM6
+was a large improvement on PM3 but after it had been used for a while, 
+two types of faults were discovered.&nbsp; One type involved cases where PM6 
+gave severely inaccurate results for some heats of formation and for some geometries,&nbsp; 
+Faults of this type were collected into a list, and stored until a new method 
+(PM7) could be developed.&nbsp; </p>
+<p>The other type of fault dealt with weak interactions between molecules, 
+specifically VDW and hydrogen-bond interactions.&nbsp; Interactions of this type 
+are of great importance, particularly in biochemistry, and errors of the type 
+that would be acceptable in heats of formation and in geometries would be 
+completely unacceptable here.&nbsp; In addition, faults of this type could be 
+corrected by the addition of a post-SCF modification to the energy, i.e., to the 
+heat of formation, of the system.&nbsp; Like earlier methods, PM6 did not do a 
+good job of reproducing intermolecular interactions; in all cases it 
+underestimated the binding energy.&nbsp; Several attempts were 
+made to correct this fault, these attempts were given specific names such as
+<a href="../Manual/pm6_dh.html"><tt>PM6-DH</tt></a>,&nbsp;
+<a href="../Manual/pm6_dh2.html"><tt>PM6-DH2</tt></a>,
+<a href="../Manual/pm6_dh_plus.html"><tt>PM6-DH+</tt></a> ,
+<a href="../Manual/pm6_dh2x.html"><tt>PM6-DH2X</tt></a>, and
+<a href="../Manual/pm6_d3.html"><tt>PM6-D3</tt></a>.&nbsp; All these methods 
+were designed to reproduce intermolecular interactions, but, since they added a 
+significant stabilization energy to the system, they could not be used as a 
+substitute for PM6 for predicting heats of formation.</p>
+<p>When the project that resulted in PM7 was started, information on both of the 
+types of errors that had been found in PM6 was used in the design.&nbsp; The set 
+of approximations was modified to include the ideas of the PM6-ABC methods, and 
+reference data was used that would allow the severely inaccurate predictions of PM6 to be 
+corrected.&nbsp; As a result, PM7 
+was able to simultaneously predict intermolecular interactions with good 
+accuracy and also to predict heats of formation and geometries with good accuracy.</p>
+<p>Recently, faults have been found in the way PM7 treats intermolecular 
+interactions.&nbsp; For small systems, everything looks good, but PM7 apparently 
+over-estimates the VDW bonding when large molecules are used.&nbsp; Also, some 
+specific faults in individual molecules have been identified. This is similar to 
+the sequence that occurred after PM6 was released, and the process for handling 
+these faults is similar.&nbsp; Specifically, a list of single-molecule faults 
+will be constructed, and, for intermolecular interactions, attempts will be made 
+to correct the energies.&nbsp; These attempts will be given names of the type 
+PM7-ABC.</p>
+<p>At some date in the future, another project (PM8?) will be started that will 
+attempt to correct the faults in PM7.&nbsp; As with the other projects of this 
+type, great care will need to be taken in the design of the new method.&nbsp; 
+For example, in recent years there have been several benchmark publications 
+describing the results of very high level calculations.&nbsp; These benchmark 
+results could be a source of valuable reference data.&nbsp; Indeed, as the 
+semiempirical methods become more accurate, there have 
+been increasing problems with conventional reference data of the type found in 
+e.g., the WebBook.</p>
+<p>An objective of each new method has been to reduce the average unsigned error 
+in important quantities by several tens of percent.&nbsp; This objective has 
+been achieved in both PM6 and PM7, and should be an objective of PM8.&nbsp; Of 
+course, since PM7 represented the best that could be done at the time, the 
+challenge in designing PM8 will be very hard.</p>
+<p>&nbsp;</p>
+</body></html>

@@ -1,0 +1,2087 @@
+<html><head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTDKH6F');</script>
+<!-- End Google Tag Manager -->
+
+<title>MOPAC2016 - Maintenance record</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Microsoft FrontPage 5.0" name="GENERATOR"/>
+<style type="text/css">
+.auto-style1 {
+	text-align: center;
+}
+.auto-style2 {
+	font-family: "Trebuchet MS";
+}
+.auto-style3 {
+	color: #0000FF;
+}
+.auto-style4 {
+	text-align: left;
+}
+.auto-style5 {
+	text-align: center;
+	font-size: medium;
+	color: #0000FF;
+}
+.auto-style6 {
+	font-family: "Trebuchet MS";
+	text-decoration: blink;
+}
+.auto-style7 {
+	font-family: "Trebuchet MS";
+	color: #FF0000;
+}
+.auto-style8 {
+	font-family: "Trebuchet MS", Verdana;
+}
+.auto-style9 {
+	color: #00FF00;
+}
+.auto-style10 {
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 0px;
+}
+.auto-style11 {
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+	font-size: medium;
+	color: #0000FF;
+}
+.auto-style12 {
+	border-style: solid;
+	border-width: 1px;
+	text-align: left;
+}
+</style>
+</head>
+<body link="#0000ff" vlink="#0000ff">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDKH6F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<h1 align="center" dir="rtl">&nbsp; Maintenance Record of MOPAC2016</h1>
+<h1 align="center"><br/>
+Windows current version number: 
+    <span class="auto-style8">21.041 </span>W<br/>
+Linux and CentOS current version number: 
+    <span class="auto-style8">21.041 </span>L<br/>Macintosh current version number: 
+    <span class="auto-style8">21.041 </span>M</h1>
+<p align="center">&nbsp;</p>
+<center><font face="Trebuchet MS, Verdana">
+<h2 align="center"><font face="Trebuchet MS, Verdana">
+Maintenance Record of MOPAC2016</font></h2>
+<table bordercolor="#111111" cellpadding="0" cellspacing="0" class="auto-style10">
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	19 April 2021</td>
+<td class="auto-style12" style="width: 1042px">
+<a href="MOPAC%20support.html">MOPAC Support</a> is available on-line.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	10 February 2021</td>
+<td class="auto-style12" style="width: 1042px">
+    Allow "<a href="Manual/plusplus.html">++</a>" in
+    <a href="Manual/geo_ref.html">GEO_REF</a> files.<br/>
+<font face="Trebuchet MS, Verdana">
+    Keyword "<a href="Manual/plusplus.html">++</a>" re-defined to make it easier 
+    to separate keywords.</font><br/>
+    Bugtrap to stop RESEQ and CVB being used in the same job. Version 21.041</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	4 February 2021</td>
+<td class="auto-style12" style="width: 1042px">
+    The layout of ionized sites in proteins has been modified to make them 
+    easier to read. Version 21.035.<br/>
+    A new section on <a href="Manual/proteins.html">proteins</a> had been added 
+    to the manual. </td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	13 January 2021</td>
+<td class="auto-style12" style="width: 1042px">
+    Keyword <a href="Manual/precise.html"><tt>PRECISE</tt> </a>has been modified for
+    calculations that use the<tt> <a href="Manual/lbfgs.html">L-BFGS</a></tt>
+    method to now mean "Geometry is considered optimized if the heat of 
+    formation does not drop over 60 cycles"&nbsp; The default of 30 cycles is 
+    unchanged.<br/>
+    Density matrices of the type used by <a href="Manual/oldens.html"><tt>OLDENS</tt></a> 
+    will only be generated if <a href="Manual/denout.html"><tt>DENOUT</tt></a> is 
+    present.&nbsp; They will no longer be generated automatically when a DUMP 
+    occurs.&nbsp; To generate them automatically, add <tt>DENOUT.<br/>
+</tt>The extra-long line in PDB files has been split into three lines. The 
+    old line had caused a crash in a GUI.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	28 October 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    A long-standing problem in MOZYME that caused Mac computers to panic and 
+    crash when several, 12 or more, MOZYME jobs were run simultaneously has been 
+    corrected, and now large numbers (tests were done on 196 MOZYME jobs in a 
+    batch queue, with 50 jobs being run at the same time) of  jobs can be run 
+     
+    <font face="Trebuchet MS, Verdana">
+    simultaneously</font>. Version 20.302</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	14 October 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    A fault in the hydrogen-bond calculation was corrected.&nbsp; This 
+    significantly affects 
+    the heats of formation of systems calculated using PM7 and PM6-D3H4, 
+    particularly proteins, and 
+    corrects the gradients in PM6-D3H4. Version 20.288.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	10 September 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    Several minor changes:<br/>
+    In "<font face="Trebuchet MS, Verdana"><a href="Manual/compare.html"><tt>COMPARE</tt></a></font>" 
+    print names of residues that move a lot and how much they move.<br/>
+    In "<font face="Trebuchet MS, Verdana"><tt>COMPARE</tt></font>" do not 
+    re-orientate a system if "<a href="Manual/noreor.html"><tt>NOREOR</tt></a>" is 
+    present.<br/>
+    The requirement that large unit cells in solids should have more than 7 
+    atomic orbitals has been removed.<br/>
+    Allow  <font face="Trebuchet MS, Verdana">
+<tt> <a href="Manual/setup.html">SETUP</a> </tt>
+</font>
+    names to be 300 characters long, was 100 characters.<br/>
+    Delete density files that were made by MOPAC to assist in internal working. 
+    Version 20.254</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	10 August 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    The "++" option has been extended to <a href="Manual/setup.html"><tt>SETUP</tt></a>. 
+    Version 20.220</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	25 July 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    The correction of 17 May 2020 introduced a fault in the solids calculation 
+    that affected the PM7 dispersion energy, and as a result the heats of 
+    formation were too positive. This has been re-corrected. Several other minor 
+    errors were also corrected. Version 20.207</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	13 July 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    Two additions to the on-line manual are (1) Examples of
+    <a href="Manual/INDO_Examples.html">INDO calculations</a>, and (2) An 
+    updated
+    <a href="PM7_and_PM6-D3H4_accuracy/Accuracy%20of%20PM7%20and%20PM6-D3H4.html">
+    Accuracy section</a>.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	8 July 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    A new keyword <a href="Manual/indo.html"><tt>INDO</tt></a> allows various 
+    spectroscopic properties to be calculated. Version 20.191</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	4 June 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    A fault in PM6-D3H4X that H4 was not being used has been fixed. Version 
+    20.154</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	17 May 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    A bug in PM6-D3H4 that affected gradients has been corrected.&nbsp; This bug 
+    was present in all copies of MOPAC with version-numbers 19.347 to 20.137.
+    <br/>
+    A minor fault in "H4" in PM6-D3H4 that affected hydrogen bonds has been 
+    corrected.<br/>
+    A minor fault that affected geometry optimizations caused by a long-range 
+    interactions in solids has been corrected. Version 20.138</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	23 April 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    Keyword <tt><a href="Manual/geo_dat.html">GEO_DAT</a></tt> and <tt>
+<a href="Manual/geo_ref.html">GEO_REF</a></tt> have been modified to allow "SELF" to refer to a 
+    file that has a different suffix.<br/>
+    Allow Deuterium in PDF files to be recognized by default.<br/>
+    When  <font face="Trebuchet MS, Verdana">
+<tt><a href="Manual/geo_ref.html">GEO_REF</a></tt>
+</font>
+    is used, the rotated-translated geometry is no longer printed 
+    out by default. <br/>
+    A fault that caused the partial atomic charge in certain hydrogen atoms to 
+    be assigned to the wrong residue has been corrected. <br/>
+    If atoms in a PDB file do not have a chain-letter, one will be assigned by default.<br/>
+    If a residue has the name "***", it will be changed to "UNK".<br/>
+    Pretty-print the times keywords.&nbsp; Version 20.114</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	2 April 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    New keyword "<a href="Manual/plusplus.html">++</a>" allows a single keyword 
+    line to be split into parts, making editing keywords easier.<br/>
+    During hydrogenation, allow oxygen atoms near to metal atoms to be 
+    recognized as water.<br/>
+    Allow PDB labels that do not have a chain-letter to be recognized.<br/>
+    A fault when assigning PDB labels in solids has been corrected. <br/>
+    Allow the <font face="Trebuchet MS, Verdana">
+<tt>
+<a href="Manual/html.html">HTML</a></tt></font>
+    keyword to work with hetero residue names such as " I " as in, e.g., "[ I ]"
+    <br/>
+    Extend keyword <a href="Manual/oldens.html"><tt>OLDENS</tt></a> to allow a UHF job 
+    the option to start from a RHF density matrix. Version 20.093</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	19 March 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    Extent defining atoms using JSmol PDB labels to allow the absence of a 
+    chain-letter.<br/>
+    Allow all keywords in a  <font face="Trebuchet MS, Verdana">
+<a href="Manual/setup.html"><tt>SETUP</tt></a>
+</font>
+    file to be deleted (previously at least one 
+    keyword was needed)<br/>
+    If 
+<font face="Trebuchet MS, Verdana">
+<tt>
+<a href="Manual/residues.html">RESIDUES</a></tt>
+</font>
+    is used, this keyword will be deleted from any resulting ARC 
+    file.<br/>
+    A warning is printed if<font face="Trebuchet MS, Verdana">
+<a href="Manual/site.html"><tt>SITE</tt></a> </font>is prevented from working because RESIDUES is 
+    being used.<br/>
+    A bug that prevented 
+    <font face="Trebuchet MS, Verdana">
+<a href="Manual/sparkle.html"><tt>SPARKLE</tt></a> </font>being used in some systems has been corrected. 
+    Version 20.078</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	17 February 2020</td>
+<td class="auto-style12" style="width: 1042px">
+<span class="auto-style8">Minor change<tt>: <a href="Manual/CVB.html">CVB</a></tt></span> can now be used 
+    with metal atoms. Version 20.046</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	1 February 2020</td>
+<td class="auto-style12" style="width: 1042px">
+<span class="auto-style8">New utility: A simple 
+    app for running MOPAC on MacOS systems, particularly Mojave, 10.14,&nbsp; has been written. This 
+    allows MOPAC jobs to be run from their folder using drag-and-drop.</span></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	6 January 2020</td>
+<td class="auto-style12" style="width: 1042px">
+    Major change: MOPAC is now being compiled using the Intel FORTRAN Release 19 
+	compiler.<br/>Minor changes: Terminate job if the optimization consistently 
+	fails to lower the Heat of Formation<br/>Version <span class="auto-style8">
+	20.005</span></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	5 December 2019</td>
+<td class="auto-style12" style="width: 1042px">
+    &nbsp;A fault in the dispersion derivatives in solids has been corrected.&nbsp;&nbsp; 
+	Version &nbsp;19.338</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	2 December 2019</td>
+<td class="auto-style12" style="width: 1042px">
+    A fault that prevented 1-D polymers being stretched using 
+	<a href="Manual/p=n.html"><tt>P=-n.nn</tt></a> has been 
+	corrected.<br/><font face="Trebuchet MS, Verdana">
+    Minor changes:<br/>(1) Reaction path geometry optimizer default changed to 
+	L-BFGS.<br/>(2) An error in modeling 1-D polymers being stretched using 
+	<a href="Manual/step.html"><tt>STEP</tt></a> 
+	and <a href="Manual/point.html"><tt>POINT</tt></a> has been corrected.<br/>(3) In the <a href="Manual/auxiliary.html"><tt>AUX</tt></a> 
+	file, the format for gradients now changes when gradients are very large.<br/>
+	(4) In the output file, an error in printing the largest gradients has been 
+	corrected.<br/>(5) An error in the print of symmetry functions 18 and 19 has 
+	been corrected</font><br/>(6) A duplicate print of errors in the 
+	<a href="Manual/QMMM.html"><tt>QMMM</tt></a> file 
+	has been removed.<br/>Version 19.336</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	9 November 2019</td>
+<td class="auto-style12" style="width: 1042px">
+    Minor changes:<br/>(1) Geometry optimizer in a reaction path changed from 
+	FLEPO to LBFGS.<br/>(2) Output unit cell parameters for solids even if 
+	<a href="Manual/mers.html"><tt>MERS</tt></a> 
+	is not present.<br/>(3) Output cluster size for solids.<br/>(4) Suppress 
+	multiplying parameter for symmetry function 18 when Cartesian coordinates 
+	are used.<br/>Version 19.312</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	6 November 2019</td>
+<td class="auto-style12" style="width: 1042px">
+    Minor bugs fixed:<br/>(1) If <a href="Manual/setup.html"><tt>SETUP</tt></a> was used with 
+	<a href="Manual/geo_dat.html"><tt>GEO_DAT</tt></a> or <a href="Manual/geo_ref.html"><tt>GEO_REF</tt></a> that 
+	contained a "+" sign in the filename, an error message was printed.<br/>(2) 
+	The number of pull points "c" allowed in 
+	<a href="Manual/Locate-TS.html"><tt>LOCATE-TS</tt></a> was too small. Increased 
+	to 100.<br/>(3) Values of "c" above 999 caused a crash.&nbsp; An error report 
+	is now issued before the run begins.<br/>(4) When solids were hydrogenated, the PDB labels on the last 
+	three atoms were deleted.<br/>(5) In the <a href="Manual/auxiliary.html"><tt>AUX</tt></a> 
+	file, the number of array elements in MICROSTATE_CONFIGURATIONS was in error 
+	by a factor of 2.<br/>Version 19.308<br/></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	22 August 2019</td>
+<td class="auto-style12" style="width: 1042px">
+<a href="Manual/html.html"><tt>HTML</tt></a> has been extended to allow animations 
+	with atomic partial charges when <a href="Manual/pdbout.html"><tt>PDBOUT</tt></a> is 
+	also present. <tt>PDBOUT</tt> is now allowed with <a href="Manual/irc0.html"><tt>IRC</tt></a> 
+	and <a href="Manual/drc0.html"><tt>DRC</tt></a>. Version 19.234.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	25 July 2019</td>
+<td class="auto-style12" style="width: 1042px">
+    Keyword <tt><a href="Manual/cutofp.html">CUTOFP</a> </tt>can now be used with solids.&nbsp; This allows solids with 
+	7000 atoms in the unit cell to be run. Version 19.206.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	24 May 2019</td>
+<td class="auto-style12" style="width: 1042px">
+    The step-size used by <tt><a href="Manual/x-priority.html">X-PRIORITY=n.nn</a></tt> has been re-defined as the sum of the 
+	motions of the atoms, the previous definition, the integral of the RMS 
+	motion, was too numerically unstable.&nbsp; Version 19.141.&nbsp; The utility program <a href="Manual/Join.html">JOIN</a>, which joins 
+	together sections of a reaction path or trajectory, has been updated. </td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	8 May 2019</td>
+<td class="auto-style12" style="width: 1042px">
+    A bug in the IRC that sometimes produced a jaggy reaction coordinate has 
+	been corrected. Version 19.128.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	31 March 2019</td>
+<td class="auto-style12" style="width: 1042px">
+    Keyword <a href="Manual/notxt.html"><tt>NOTXT</tt></a> did nothing.&nbsp; It 
+	has now been activated, useful with <a href="https://avogadro.cc/">Avogadro</a>. 
+	Version 19.090</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+<font face="Trebuchet MS, Verdana">
+	21 November 2018</font></td>
+<td class="auto-style12" style="width: 1042px">
+    A new <a href="Manual/Vibrational%20Quantities%20-%20Derivation.html">set of 
+	pages</a> has been written describing how various properties of vibrations 
+	are calculated. As these pages are new, comments about them would be 
+	welcomed. Please send comments to openmopac at gmail.com.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	1 November 2018</td>
+<td class="auto-style12" style="width: 1042px">
+    The quantity "Travel" in a normal mode of vibration was faulty. This has 
+	been corrected.&nbsp; Vibrational force-constants are now printed. Version 
+	18.305</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	12 October 2018</td>
+<td class="auto-style12" style="width: 1042px">
+    Keyword 
+	<a href="Manual/metal.html"><tt>METAL</tt></a> expanded to allow atoms to be 
+	identified by PDB and JSmol labels.<br/>Version 18.289 </td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	27 September 2018</td>
+<td class="auto-style12" style="width: 1042px">
+    A fault was found in PM7-TS.&nbsp; This has been corrected.&nbsp; The fault 
+	affects all copies of MOPAC between versions 18.151 and 18.269.&nbsp; 
+	Version 18.270</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	15 September 2018</td>
+<td class="auto-style12" style="width: 1042px">
+    Two new keywords: <a href="Manual/rabbit-ears.html"><tt>RABBIT</tt></a>, converts 
+	lone pairs in localized molecular orbitals from conventional M.O. 
+	calculations into rabbit-ears, and <a href="Manual/banana-bonds.html"><tt>BANANA</tt></a>, 
+	converts double and triple bonds <font face="Trebuchet MS, Verdana">
+	in localized molecular orbitals from conventional M.O. calculations into 
+	banana-bonds</font>.<br/>RE-LOCAL will recalculate <font face="Trebuchet MS, Verdana">
+	localized molecular orbital
+</font>
+    energy levels. <font face="Trebuchet MS, Verdana">
+	Version 18.</font>258</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	31 May 2018</td>
+<td class="auto-style12" style="width: 1042px">
+    Several small bugs removed. Version 18.151</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	27 April 2018</td>
+<td class="auto-style12" style="width: 1042px">
+    An error in PM6-D3H4 that caused double-counting of hydrogen bonds has been 
+	corrected. This error affects copies of MOPAC with version numbers between 
+	17.267 and 18.110.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	11 April 2018</td>
+<td class="auto-style12" style="width: 1042px">
+    All the lanthanide elements are now available for use with RM1.&nbsp; 
+	Previously keyword "SPARKLE" had to be used. Version 18.101</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	4 March 2018</td>
+<td class="auto-style12" style="width: 1042px">
+<font face="Trebuchet MS, Verdana">
+	Several errors in <a href="Manual/makpol.html">MAKPOL</a> that caused 
+	crashes have been corrected.<br/><br/>MOPAC Version 18.063:
+    this update involves mostly only minor changes:<br/>
+</font>
+    (1) Phenol added to the list of ligands that are recognized.<br/>(2) Formula 
+	and number of atoms in unrecognized ligands now printed.<br/>(3) When 
+	GRADIENT is printed, Gradient per atom is also printed.<br/>(4) PDB labels 
+	outside bounds now print "9"s instead of asterisks.<br/>(5) An error in 
+	differences in bond-lengths when comparing geometries has been fixed. <br/>
+	(6) Dummy atoms in data-sets that use GEO-REF are now allowed, but are 
+	ignored.<br/>(7) Comment lines, indicated by an asterisk in column 1, are now 
+	allowed in geometries.<br/>(8) An error in detecting hydrogen bonds has been 
+	corrected.<br/>(9) Systems with up to 10 bonds to a main-group element 
+	allowed (previous limit: 5)<br/>(10) An error that sometimes caused PDB files 
+	to not be printed has been corrected.<br/>(11) In a LOCATE-TS run, 
+	intermediate PDB files are no longer locked and can now be accessed.<br/>(12) 
+	Dummy atoms are now allowed in PDB files, and can be used in defining 
+	geometries.<br/>(13) <font face="Trebuchet MS, Verdana">
+	An array-bounds error i</font>n jobs that uses OLDGEO and symmetry has been 
+	corrected.<br/>(14) Unwanted keywords have been removed from the results 
+	files for SADDLE calculations.<br/>(15) Large values of polarization in MECI 
+	calculations now printed. <br/>(16) Several very minor irritants have been 
+	removed.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	23 February 2018</td>
+<td class="auto-style12" style="width: 1042px">
+<a href="Manual/Locating_transition_states.html">New description</a> of 
+	techniques for locating transition states in chemical reactions.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	1 February 2018</td>
+<td class="auto-style12" style="width: 1042px">
+    New version of <a href="Manual/Program_BZ.html">BZ</a>, OpenGL graphics have 
+	been replaced by QuickWin graphics.<br/>The output from BZ is now easier to 
+	see.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	25 January 2018</td>
+<td class="auto-style12" style="width: 1042px">
+<span class="auto-style9"><br/></span>New version of
+<font face="Trebuchet MS, Verdana">
+<a href="Manual/makpol.html">MAKPOL</a></font>, simplifies building 
+	solid-state data sets.<span class="auto-style9"><br/></span><br/>MOPAC Version 
+	18.025:
+    <font face="Trebuchet MS, Verdana">
+    this update involves mostly only minor changes:</font><br/>(1) Symmetry data can now be output in PDB format.<br/>(2) Large 
+	coordinates, up to 9999 Angstroms, can be used<br/>(3) Large residue numbers 
+	in PDB files were displayed as ****, these are now displayed as 99999 <br/>
+	(4) Urea added to the list of recognized ligands.<br/>(5) Dummy atoms are now 
+	allowed in MOPAC data sets that include PDB information.<br/>(6) An improved 
+	error-message is printed when a mistake is made in activating MOPAC.<br/>(7) 
+	MOZYME-specific messages (residue charges, ionized sites, etc.) are 
+	suppressed when MOZYME is not used.<br/>(8) Ridiculous heats of formation in 
+	paths no longer cause formatting errors.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	11 January 2018</td>
+<td class="auto-style12" style="width: 1042px">
+    Version 18.011:
+    <font face="Trebuchet MS, Verdana">
+    this update involves mostly only minor changes:<br/>(1) If <a href="Manual/charge.html"><tt>CHARGE</tt></a>&nbsp; 
+	is present in a MOZYME calculation, a message saying that this supplied 
+	charge is correct or wrong will be printed.<br/>(2) <a href="Manual/site.html"><tt>SITE</tt></a> 
+	error-messages are now more detailed.<br/>(3) Errors detected in connectivity 
+	are now easier to read.<br/>(4) Chain letter "0" in PDB files is now 
+	converted to "A" (zero is not allowed in PDB files.)<br/>(5) The time for the 
+	first SCF in a MOZYME 
+	<a href="Manual/ts.html"><tt>TS</tt></a> 
+	calculation has been reduced.<br/>(6) PDB files can now be generated even 
+	when dummy atoms are present, provided the dummy atoms come after all real 
+	atoms.&nbsp; Useful in solid-state calculations.<br/>(7) Clearer error 
+	messages when a job fails to start are now printed.</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	2 January 2018</td>
+<td class="auto-style12" style="width: 1042px">
+<font face="Trebuchet MS, Verdana">
+    Version 18.002: this update involves 
+	mostly only minor changes:<br/>(1) Minor edit to <a href="Manual/Locate-TS.html"><tt>LOCATE-TS</tt></a> 
+	output reminding users of PDB labels has been added.<br/>(2) In 
+	Windows-with-a-window, periodic reminders of data-set added.<br/>(3)
+    <span class="auto-style7">Bugfix: </span>
+<span class="auto-style2">A faulty global optimization of solids when HTML 
+	is present has been corrected.<br/>(4) A time-wasting step in gradient 
+	minimization in MOZYME has been corrected.</span></font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+<font face="Trebuchet MS, Verdana">
+	27 December 2017</font></td>
+<td class="auto-style12" style="width: 1042px">
+<font face="Trebuchet MS, Verdana">
+    Version 17.</font><span class="auto-style2">361</span><font face="Trebuchet MS, Verdana">: this update involves 
+	mostly only minor changes:<br/>(1) Remove duplicate error-message lines when a hydrogen atom is far from 
+	any other atom.<br/>(2) Tidy up keywords when " 
+	<a href="Manual/plus.html">+</a> " or " 
+	<a href="Manual/ampersand.html">&amp;</a> " are used and 
+	special keywords are deleted.<br/>(3) 
+</font>
+<span class="auto-style7">Bugfix:</span>
+An error that caused a crash when COSMO 
+	was used with some small systems has been corrected.<br/>(4) When a <font face="Trebuchet MS, Verdana">
+	non-standard geometry is specified by
+</font><a href="Manual/geo_ref.html"><tt>GEO-REF</tt></a>, make an attempt to read it.<br/>(5) Allow
+	<a href="Manual/Locate-TS.html"><tt>LOCATE-TS</tt></a> to use
+	<tt>
+<a href="Manual/gnorm.html">GNORM</a></tt><br/>(6) Data files generated by 
+	<a href="Manual/Locate-TS.html"><tt>LOCATE-TS</tt></a> now contain keyword 
+	<a href="Manual/mozyme.html"><tt>MOZYME</tt></a><br/>(7) <a href="Manual/force.html"><tt>FORCE</tt></a> calculations that use 
+	<a href="Manual/output.html"><tt>OUTPUT</tt></a> and do not generate results are stopped and a warning printed.<br/>(8) 
+	Unnecessary output of geometry suppressed when LMO's are reset.<br/>(9) When 
+	<a href="Manual/oldgeo.html"><tt>OLDGEO</tt></a> is present, it is not printed in the ARC file.<br/>(10) Duplicate 
+	print of "SETUP FILE MISSING" deleted.<br/>(11) Corrective action taken when 
+	an attempt is made to use <a href="Manual/site.html"><tt>SITE</tt></a> to delete a hydrogen atom from an atom that 
+	does not have any hydrogen atoms.<br/>(12) Residues with negative numbers 
+	allowed (a recent bug prevented negative numbers)<br/>(13) In a 
+	<a href="Manual/charges.html"><tt>CHARGES </tt></a> job, 
+	when the computed charge and keyword <a href="Manual/charge.html"><tt>CHARGE</tt></a> are different a warning message 
+	is printed.<br/>(14) When <tt>OLDGEO</tt> is used, a warning message is printed at the 
+	start of the ARC file, alerting users to the presence of multiple ARC files.<br/>(15) Transition state location method 
+	<a href="Manual/ts.html"><tt>TS</tt></a> 
+	improved for use with <a href="Manual/mozyme.html"><tt>MOZYME</tt></a>.<br/>
+	(16) Symmetry related atoms can now be defined using PDB or JSmol character 
+	strings.<br/>(17) Symmetry related atoms in 	<a href="Manual/zero_scf.html"><tt>0SCF</tt></a>
+<a href="Manual/restart.html"><tt>RESTART</tt></a> jobs are now correctly displayed.<br/>
+	(18) An initial faulty point-group identification when <tt>
+<a href="Manual/symmetry.html">SYMMETRY</a> </tt>is present in a <font face="Trebuchet MS, Verdana">
+<a href="Manual/restart.html"><tt>RESTART</tt></a></font>
+    job has been corrected.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+<font face="Trebuchet MS, Verdana">
+	15 December 2017</font></td>
+<td class="auto-style12" style="width: 1042px">
+<font face="Trebuchet MS, Verdana">
+    Version 17.349: this update involves only minor changes:<br/>(1) The cause of 
+	a very rare 
+	crash in COSMO was traced and corrected.<br/>(2) Empty keyword lines are now 
+	allowed in <a href="Manual/Locate-TS.html"><tt>LOCATE-TS</tt></a> output files.<br/>
+	(3) In <a href="Manual/oldgeo.html"><tt>OLDGEO</tt></a> jobs, title lines can now be copied from a 
+	previous calculation.</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	12 December 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    Version 17.<font face="Trebuchet MS, Verdana">346</font>: this update involves only minor changes:<br/>(1) By default, the anionic charge on a phenoxy groups is 
+	now 
+	placed on the oxygen.<br/>(2) A test is run on filenames that end in ".txt" to 
+	ensure that the name is allowed.<br/>(3) Reported changes in net charge resulting from
+	<a href="Manual/site.html"><tt>SITE</tt></a> are now more accurate.<br/>(4) 
+	Bug in keyword "&amp;" that prevented title from being printed has been 
+	corrected.<br/>(5) Spurious results when <a href="Manual/Locate-TS.html">
+<tt>LOCATE-TS(C:)</tt></a> used have been suppressed.<br/>(6) When "&amp;" or "+" 
+	are used, and few or no keywords are present, the lines are joined up.<br/>
+	(7) <font face="Trebuchet MS, Verdana">
+	When "&amp;" or "+" are used, t</font>itle and comment lines are now printed if 
+	allowed.<br/>(8) Allow hydrogen atoms to be swapped even if their labels are 
+	different.<br/>(9) Bug in deleting multiple occurrences of "one-off" 
+	keywords, such as <a href="Manual/site.html"><tt>SITE</tt></a>, corrected.<br/>
+	(10) Error in printing rotated-translated input data corrected.<br/></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	6 October 2017
+    </td><td class="auto-style12" style="width: 1042px">
+    New web page:
+	<a href="Manual/Lab_notebook_for_Enzyme_Binding_and_Specificity.html">Lab 
+	notebook for Enzyme Binding and Specificity</a>. (Needs Version 17.277 or 
+	higher)</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	9 September 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    New web page:
+	<a href="Manual/Notes%20on%20working%20with%20computational%20models.html">
+	Notes on working with computational models</a> (for biochemists)<br/><strong>&nbsp;&nbsp; </strong>&nbsp;<a href="Manual/Lab_notebook_for_Chymotrypsin_Mechanism.html">Example 
+	of a Lab notebook: Chymotrypsin</a></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	25 August 2017</td>
+<td class="auto-style12" style="width: 1042px">
+<b>
+&nbsp;</b>New web-page: <a href="Manual/disorder_example.html">Example of using 
+	a structure that has symmetry disorder</a></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	19 August 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    A fault in MOZYME has been corrected.&nbsp; This affects heats of 
+	formations of a small number of systems. Version 17.231.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	10 August 2017</td>
+<td class="auto-style12" style="width: 1042px">
+<a href="Manual/add-h.html"><tt>ADD-H</tt></a> and
+	<a href="Manual/site.html"><tt>SITE</tt></a> extended to work with solids. New keyword
+	<a href="Manual/nocomments.html"><tt>NOCOMMENTS</tt></a>. Version 17.231</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	30 June 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    New keyword <a href="Manual/compare.html"><tt>COMPARE</tt></a> allows the geometries 
+	pairs of systems to be compared.&nbsp; New format for output from
+	<a href="Manual/bonds.html"><tt>BONDS</tt></a>. Version 17.181</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	14 June 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    PDB files with inserted residues (column 27) can now be read. Version 17.162</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	31 May 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    More modifications have been made to the hydrogenation operation<font face="Trebuchet MS, Verdana">
+<a href="Manual/add-h.html"><tt>ADD-H</tt></a>.&nbsp;
+	<a href="Manual/add-H.zip">Tests on many proteins</a> from the PDB were 
+	successful. Version 17.151</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	20 April 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    The hydrogenation operation (<font face="Trebuchet MS, Verdana"><a href="Manual/add-h.html"><tt>ADD-H</tt></a></font>) has been improved. This results in a 
+	lower &Delta;H<sub><span class="auto-style2">f</span></sub><font face="Trebuchet MS, Verdana">
+	for the hydrogenated system and a roughly 10% reduction in the number of 
+	cycles needed for geometry optimization. Version 17.109</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	14 April 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    New web-page <a href="Manual/compare.html">Compare</a> describes how the 
+	geometries of pairs of proteins can be compared.<br/>New web-page
+	<a href="Manual/Publications.html">Publications</a> gives supplementary data 
+	on recent protein articles.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	3&nbsp; April 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    An error in salt bridges involving Lys and Arg at C end of proteins has been 
+	fixed. Version 17.093 </td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	8 February 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    Keyword <a href="Manual/thermo00.html"><tt>THERMO</tt></a> extended to allow the 
+	thermodynamics of a single atom to be run. Version 17.037</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	31 January 2017</td>
+<td class="auto-style12" style="width: 1042px">
+    An error in AUX that affected THERMO properties ENTHALPY_TOT, 
+	HEAT_CAPACITY_TOT, ENTROPY_TOT, and H.O.F(T) has been corrected. Version 
+	19.031</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	19 January 2017</td>
+<td class="auto-style12" style="width: 1042px">
+<font face="Trebuchet MS, Verdana">
+    Errors in keyword <a href="Manual/thermo.html"><tt>THERMO</tt></a> 
+	corrected.&nbsp; Version 17.019</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	18 December 2016</td>
+<td class="auto-style12" style="width: 1042px">
+    Errors in keyword <a href="Manual/thermo.html"><tt>THERMO</tt></a> corrected.&nbsp; 
+	New keyword <a href="Manual/output.html"><tt>OUTPUT</tt></a>. Many minor errors 
+	removed. Version 16.353</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style11" width="182">
+	1 March 2016</td>
+<td class="auto-style12" style="width: 1042px">
+    An error that affected license keys that had less than 17 characters was 
+	reported (affected licenses issued between 2000 and 2006).&nbsp; This error has 
+	now been corrected. <br/>Atom additive corrections made to polarization 
+	volumes for PM7.&nbsp; This reduces the Average Unsigned Error for simple 
+	molecules to
+	<a href="/PM7_and_PM6-D3H4_accuracy/Polarizabilities.html">0.185 &Aring;</a><span class="auto-style2"><sup><a href="/PM7_and_PM6-D3H4_accuracy/Polarizabilities.html">3</a></sup>. <font face="Trebuchet MS, Verdana">
+	Version 16.057</font></span></td>
+</tr>
+</table>
+<h2 align="center">Maintenance Record of MOPAC2016, 
+  <span class="auto-style6">beta-test</span></h2>
+<font face="Trebuchet MS, Verdana">
+<p align="center">The beta test will run until the end of February.</p>
+<table border="1" bordercolor="#111111" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="902">
+<tr>
+<font face="Trebuchet MS, Verdana">
+</font><td bgcolor="#ffffcc" class="auto-style5" width="182">
+	4 February 2016</td>
+<td class="auto-style4" style="width: 703px">
+    New keyword <a href="Manual/output.html"><tt>OUTPUT</tt></a>. New and 
+	modified keywords: <tt><a href="Manual/geo_ref.html">GEO_REF</a>, 
+	<a href="Manual/site.html">SITE</a>, <a href="Manual/setpi.html">SETPI</a>, 
+	<a href="Manual/xeno.html">XENO</a>, <a href="Manual/html.html">HTML</a>, 
+	<a href="Manual/opt_label.html">OPT(text)</a>, <a href="Manual/CVB.html">CVB</a></tt>. <br/>New protein structure comparison. <br/>
+	Some molecules of point-group C2 were incorrectly assigned as C1. Version 
+	16.035</td>
+</tr>
+</table>
+<h2 align="center">Maintenance Record of MOPAC2012</h2>
+<table border="1" bordercolor="#111111" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="902">
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana"><span class="auto-style3"><font size="4">
+    17 November 2015</font></span></font></td>
+<td class="auto-style4" style="width: 703px">
+    Path, IRC, and DRC animations added to HTML.
+	<a href="Manual/Individual%20JSmol%20paths/Animations.html">Examples</a>. 
+	Version 15.321</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana"><span class="auto-style3"><font size="4">
+    &nbsp;8 October 2015</font></span></font></td>
+<td class="auto-style4" style="width: 703px">
+    Partial charges added to HTML PDB files. Several bugs, including one in the 
+	AUX compressed energy levels and M.O.s, have been removed.&nbsp; Version 
+	15.281</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana"><span class="auto-style3"><font size="4">
+    17 June 2015</font></span></font></td>
+<td class="auto-style4" style="width: 703px">
+<font face="Trebuchet MS, Verdana">
+    New keyword: <a href="Manual/pm6_d3h4x.html"><tt>PM6-D3H4X</tt></a>. Version 
+	15.168</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana"><span class="auto-style3"><font size="4">
+    &nbsp;1 June 2015</font></span></font></td>
+<td class="auto-style4" style="width: 703px">
+<font face="Trebuchet MS, Verdana">
+<a href="Manual/pm6_d3h4.html"><tt>PM6-D3H4</tt></a> now runs faster. 
+	Version 15.152</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana"><font size="4"><span class="auto-style3">
+	27</span></font><span class="auto-style3"><font size="4">
+    May 2015</font></span></font></td>
+<td class="auto-style4" style="width: 703px">
+    New keyword: <a href="Manual/pm6_d3h4.html"><tt>PM6-D3H4</tt></a>. 
+	Currently, this version of D3 is very slow. Version 
+	15.147</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana"><font size="4"><span class="auto-style3">
+	7</span></font><span class="auto-style3"><font size="4">
+    May 2015</font></span></font></td>
+<td class="auto-style4" style="width: 703px">
+    A bug in the Mulliken population analysis has been corrected. Version 15.127</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana"><span class="auto-style3"><font size="4">
+    4 March 2015</font></span></font></td>
+<td class="auto-style4" style="width: 703px">
+    Several errors removed.&nbsp; Changes made to <a href="Manual/site.html">
+<tt>SITE</tt></a>, <a href="Manual/CVB.html"><tt>CVB</tt></a>, <a href="Manual/disp.html"><tt>DISP</tt></a>,
+	<a href="Manual/geo_ref.html"><tt>GEO_REF</tt></a>. New keyword
+	<a href="Manual/noswap.html"><tt>NOSWAP</tt></a>.&nbsp; Keyword <tt>SWAP </tt> deleted. Version 
+	15.063.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana"><span class="auto-style3"><font size="4">
+    31 December 2014</font></span></font></td>
+<td class="auto-style4" style="width: 703px">
+    Minor change to <font face="Trebuchet MS, Verdana">
+<a href="Manual/site.html">
+<tt>SITE</tt></a>. Two minor faults removed. Version 14.365.
+</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana"><span class="auto-style3"><font size="4">
+    27 December 2014</font></span></font></td>
+<td class="auto-style4" style="width: 703px">
+    Option to add salt bridges to a protein via <a href="Manual/site.html">
+<tt>SITE=(SALT)</tt></a>.&nbsp; Option to suppress residue names in HTML, see
+	<a href="Manual/html.html"><tt>HTML(NORES)</tt></a>. Several faults relating to 
+	protein labels removed. Version 14.362.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana"><span class="auto-style3"><font size="4">
+    30 October</font></span><font color="#0000FF" face="Trebuchet MS, Verdana" size="4"> 2014</font></font></td>
+<td class="auto-style4" style="width: 703px">
+    Changes made to the definitions of <font face="Trebuchet MS, Verdana">
+<a href="Manual/html.html"><tt>HTML</tt></a>
+</font>
+    and <font face="Trebuchet MS, Verdana">
+<a href="Manual/add-h.html"><tt>ADD-H</tt></a>,</font>. New keywords
+	<a href="Manual/check.html"><tt>CHECK</tt></a> and
+	<a href="Manual/noreseq.html"><tt>NORESEQ</tt></a>.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182"><font face="Trebuchet MS, Verdana"><span class="auto-style3"><font size="4">
+    18 September</font></span><font color="#0000FF" face="Trebuchet MS, Verdana" size="4"> 2014</font></font></td>
+<td class="auto-style4" style="width: 703px">
+<font face="Trebuchet MS, Verdana">
+    MOPAC ported to CentOS 6&nbsp; Version 14.260.</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182"><font face="Trebuchet MS, Verdana"><span class="auto-style3"><font size="4">
+    14 September</font></span><font color="#0000FF" face="Trebuchet MS, Verdana" size="4"> 2014</font></font></td>
+<td style="width: 703px">
+    MOPAC ported to CentOS 7&nbsp; Version 14.253.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana">
+<span class="auto-style3"><font size="4">5 September</font></span><font color="#0000FF" face="Trebuchet MS, Verdana" size="4"> 2014</font></font></td>
+<td style="width: 703px">
+    New keyword <a href="Manual/Locate-TS.html"><tt>LOCATE-TS</tt></a> - given 
+	two intermediates in <a href="Manual/Modeling_proteins.html">enzyme-catalyzed reactions</a>, <tt>LOCATE-TS </tt>will locate and 
+	refine the transition state.&nbsp; Many minor bugs removed. Version&nbsp; 
+	14.247.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font face="Trebuchet MS, Verdana">
+<span class="auto-style3"><font size="4">8 May</font></span><font color="#0000FF" face="Trebuchet MS, Verdana" size="4"> 2014</font></font></td>
+<td style="width: 703px">
+    New keyword <a href="Manual/html.html"><tt>HTML</tt></a> - writes a web-page for 
+	graphical representation of proteins (uses JSmol) Version 14.128.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<span class="auto-style3"><font size="4">24 March</font></span><font color="#0000FF" face="Trebuchet MS, Verdana" size="4"> 2014</font></td>
+<td style="width: 703px">
+    On-line manual re-written to correctly represent Greek symbols in Firefox 
+	and Safari.&nbsp; Several minor bugs removed from MOPAC. Version 14.083.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">16 January 2014</font></td>
+<td style="width: 703px">
+    When an Nvidia Fermi or Kepler GPU chip is present, versions of MOPAC 
+	labeled "CPU+GPU" will automatically use 
+	that chip.&nbsp; For details, see <a href="Manual/gpu.html">GPU</a>.&nbsp;&nbsp; 
+	New or changed keywords: <a href="Manual/prtchar.html"><tt>PRTCHAR</tt></a>, 
+	<a href="Manual/nogpu.html"><tt>NOGPU</tt></a>, <a href="Manual/xeno.html"><tt>XENO</tt></a>. Version 
+	14.<span class="auto-style2">014</span>.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">27 November 2013</font></td>
+<td style="width: 703px">
+    A bug in the Windows version that slowed it down has been corrected. The 
+	Windows versions now run about six times faster.&nbsp; The 32-bit version of 
+	Windows MOPAC runs about 25% faster than the 64 bit version. </td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">4 November 2013</font></td>
+<td style="width: 703px">
+    A <a href="Discussions/Discussion_topics.html">new web-page</a> has been written that 
+	discusses various topics relating to MOPAC.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" class="auto-style1" width="182">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">2 November 2013</font></td>
+<td style="width: 703px">
+    Cartesian coordinates now printed (again) in &lt;file&gt;.out.&nbsp; Version 
+	13.306.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">13 September 2013</font></p></td>
+<td style="width: 703px">
+    PM7 Mg-N core-core term modified.&nbsp; Version 13.284.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">1 September 2013</font></p></td>
+<td style="width: 703px">
+    Linux 32 and Linux 64 bit versions available - see
+    <a href="Download_MOPAC_Executable_Step2.html">Downloads</a></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">26 August 2013</font></p></td>
+<td style="width: 703px">
+    Journal references for Ln(3+) RM1 and PM7 updated, DRC format updated. 
+    Version 13.236</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">21 August 2013</font></p></td>
+<td style="width: 703px">
+    A fault that caused the wall-clock time to reset to zero at 1:00 am has been 
+    corrected.&nbsp; New keyword <tt><a href="Manual/threads.html">THREADS</a></tt> added.&nbsp; Version 13.234</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center">&nbsp;<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">25 
+    July 2013</font></p></td>
+<td style="width: 703px">
+    Modifications have been made to reduce the computation time.&nbsp; For some 
+    large systems, MOPAC now runs over 100 times <a href="Manual/MKL.html">faster</a>, 
+    see <a href="Manual/Reducing_computation_time.html">details</a>.&nbsp; 
+    64 bit versions supported for Windows, Linux, and Mac, 32 bit versions 
+    available for Windows.&nbsp;&nbsp; Version 13.204</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">1 June 2013</font></p></td>
+<td style="width: 703px">
+    Programs MOPAC2016, <a href="Manual/makpol.html">Makpol</a>, and
+    <a href="Manual/Program_BZ.html">BZ</a> updated to allow band structure of 
+    electronics and phonons to be modeled.&nbsp; Windows only <font face="Trebuchet MS, Verdana">
+    Version 13.149W</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">23 May 2013</font></p></td>
+<td style="width: 703px">
+    Default oxidation number for lead (Pb) used in MOZYME set to +2, was +4.&nbsp; 
+    Version 13.143</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">16 May 2013</font></p></td>
+<td style="width: 703px">
+    A new keyword, <a href="Manual/QMMM.html"><tt>QMMM</tt></a> (alt:
+    <a href="Manual/QMMM.html"><tt>MOL_QMMM</tt></a>) is provided to allow including 
+    environmental effects in QM/MM calculations.&nbsp; Version 13.136</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">23 March 2013</font></p></td>
+<td style="width: 703px">
+    A fault in H<sub>2</sub> when both atoms are on the "Z" axis has been 
+    corrected. Version 13.113</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">13 March 2013</font></p></td>
+<td style="width: 703px">
+    New <a href="Manual/Modeling_proteins.html">web-page</a> specifically 
+    dealing with proteins.&nbsp;
+    Minor changes to improve formats and correct small errors. Version 13.071</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">28 February 2013</font></p></td>
+<td style="width: 703px">
+    Several changes made to the recognition and printing of PDB files.&nbsp; 
+    Keywords <tt><a href="Manual/xeno.html">XENO</a></tt>, <tt>
+<a href="Manual/residues.html">RESIDUES</a></tt>, and <tt>
+<a href="Manual/start_res.html">START_RES</a></tt> have been re-defined.&nbsp; 
+    Version 13.059</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">5 February 2013</font></p></td>
+<td style="width: 703px">
+    Keyword XENO re-defined, several changes made to improve reading of PDB 
+    files and detect errors in PDB files. Version 13.036</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">6 January 2013</font></p></td>
+<td style="width: 703px">
+<a href="http://link.springer.com/article/10.1007%2Fs00894-012-1667-x?LI=true#page-1">
+    PM7 reference</a>&nbsp; updated: "Optimization 
+    of Parameters for Semiempirical Methods VI: More Modifications to the NDDO 
+    Approximations and Re-optimization of Parameters", J. J. P. Stewart, J. Mol. 
+    Mod., 1:32, 19 (2013).&nbsp; See  :&nbsp;
+    <a href="http://link.springer.com/article/10.1007/s00894-007-0233-4?LI=true#page-1">
+    PM6</a>,
+    <a href="http://link.springer.com/article/10.1007/s00894-008-0299-7?LI=true#page-1">
+    PM6-solids</a>, and
+    <a href="http://link.springer.com/article/10.1007/s00894-008-0420-y?LI=true#page-1">
+    PM6-proteins</a>. Version 13.006</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">30 December 2012</font></p></td>
+<td style="width: 703px">
+    A fault that prevented proteins fully optimizing has been fixed. Version 
+    12.365</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">21 December 2012</font></p></td>
+<td style="width: 703px">
+    A new keyword, <a href="Manual/add-h.html"><tt>ADD-H</tt></a>, adds hydrogen atoms to 
+    an organic compound, in particular a PDB file.&nbsp;
+    Two errors in atom labels for Trp have been corrected.<br/>
+<a href="http://link.springer.com/content/pdf/10.1007%2Fs00894-012-1667-x">PM7 article published.</a> See also
+    <a href="http://link.springer.com/content/pdf/10.1007/s00894-007-0233-4">PM6</a>,
+    <a href="http://link.springer.com/content/pdf/10.1007/s00894-008-0420-y">proteins</a>, and
+    <a href="http://link.springer.com/content/pdf/10.1007/s00894-008-0299-7">solids</a>. 
+    Version 12.356.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">1 December 2012</font></p></td>
+<td style="width: 703px">
+<font face="Trebuchet MS, Verdana">
+    Sparkle-RM1 elements La - Lu (Z = 57 - 71) added.&nbsp;&nbsp; 
+    Version 12.336.</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">5 November 2012</font></p></td>
+<td style="width: 703px">
+    Sparkle-PM7 elements La - Lu (Z = 57 - 71) added, <font face="Trebuchet MS, Verdana">
+    increasing the total number of elements in PM7 to 83
+</font>
+    .&nbsp; <font face="Trebuchet MS, Verdana">
+    Sparkle-PM7
+</font>
+    gives good results for geometries of lanthanide complexes and solids.&nbsp; 
+    Version 12.310.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">27 October 2012</font></p></td>
+<td style="width: 703px">
+    A fault in the "MOPAC for Windows" academic password control has been fixed.<br/>
+    The reference for PM7 has been updated to "accepted" Version 12.301.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">16 October 2012</font></p></td>
+<td style="width: 703px">
+    Dispersion corrections for solids were dependent on the size of the unit 
+    cell used.&nbsp; This fault has been corrected. Version 12.290.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">26 August 2012</font></p></td>
+<td style="width: 703px">
+    A fault when Environmental Variables were used to specify the location of 
+    MOPAC2016.exe has been corrected.&nbsp; A total of over 4500 users took part 
+    in the beta test. Version 12.239.</td>
+</tr>
+</table>
+<h2 align="center">Maintenance Record of MOPAC2012, beta-test</h2>
+</font>
+<font face="Trebuchet MS, Verdana">
+<table border="1" bordercolor="#111111" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="902">
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">9 July 2012</font></p></td>
+<td width="679">
+    About 2300 downloads of beta test.&nbsp; No faults reported. Beta test will 
+    be terminated early, at the end of July, unless there are enough faults 
+    reported to justify the original date</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">22 June&nbsp; 2012</font></p></td>
+<td width="679">
+    About 1500 downloads of beta test.&nbsp; PM7-TS method updated and PM7-TS 
+    web-page <a href="/PM7_and_PM6-D3H4_accuracy/Barrier_heights.html">
+    updated</a> TURBOMOLE <a href="Manual/TURBOMOLE_geometry.html">input</a> now 
+    supported. Faults in
+    PM7_accuracy 
+    web-page 
+    corrected.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center"><font color="#0000FF" size="4">14 June 2012</font></p></td>
+<td width="679">
+    About 600 downloads of beta test.&nbsp;&nbsp; No changes made to 
+    executables.&nbsp; PM7_accuracy updated.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="182">
+<p align="center">
+<font color="#0000FF" size="4">2 June 2012</font></p></td>
+<font face="Trebuchet MS">
+</font><td width="679">
+    New keywords: <a href="Manual/pm7.html">PM7</a> and
+    <a href="Manual/pm7-ts.html">PM7-TS</a>.&nbsp; For details, see
+    PM7_Accuracy. Version  
+    <font face="Trebuchet MS">
+    12.153</font>.</td>
+</tr>
+<font face="Times New Roman">
+</font></table>
+<h2 align="center">Maintenance Record of MOPAC2009</h2>
+</font>
+<font face="Trebuchet MS, Verdana">
+<table border="1" bordercolor="#111111" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="899">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">3 February 201</font><font color="#0000FF" size="4">2</font></p></td>
+<td width="678">
+<font face="Trebuchet MS, Verdana">
+    Expiry date of Academic version of MOPAC2009 re-set to December 31 2012&nbsp;
+    Version 11.366. </font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">8 January 2012</font></p></td>
+<td width="678">
+   
+    Expiry date of Academic version of MOPAC2009 set to March 31 2012.&nbsp; 
+    Availability of MOPAC will not be affected.
+    <font face="Trebuchet MS, Verdana">
+    Version 11.091. </font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">8 February 2011</font></p></td>
+<td width="678">
+   
+    New keyword: <a href="Manual/pm6_dh_plus.html"><tt>PM6-DH+</tt></a>, allows 
+    geometries of hydrogen-bonding systems to be optimized using H-bond 
+    corrections. Version 11.038</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" size="4">7 December 2010</font></p></td>
+<td width="678">
+   
+    &nbsp;A fault involving <a href="Manual/noanci.html"><tt>NOANCI</tt></a> with 
+    
+
+    
+ <font face="Times New Roman">
+<tt>
+<a href="Manual/mozyme.html">MOZYME</a> </tt>
+</font>has been corrected. Version 10.340</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">24 November 2010</font></p></td>
+<td width="678">
+   
+    Cartesian coordinate range extended to +/-9999 Angstroms.&nbsp; With
+    <a href="Manual/graph.html"><tt>GRAPHF</tt></a>, M.O.s for Jmol limited to +/- 8 about the HOMO-LUMO gap unless
+    <a href="Manual/allvec.html"><tt>ALLVEC</tt> </a>is specified.&nbsp; <br/>
+    Version 10.328</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">4 November 2010</font></p></td>
+<td width="678">
+   
+    AUX(0) did not re-direct output to channel "0". Version 10.308 </td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">&nbsp;15 October 2010</font></p></td>
+<td width="678">
+   
+    A bug in AUX re-directed optimizing geometry has been corrected.&nbsp; 
+    Re-orientated geometry in FORCE calculation now written to AUX. Version 
+    10.288</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">8 September 2010</font></p></td>
+<td width="678">
+   
+    Units of heat of formation changed from KCAL to KCAL/MOL and from KJ to 
+    KJ/MOL. Version 10.251</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">2 June 2010</font></p></td>
+<td width="678">
+   
+    Net charges on residues are now printed when non-standard residues were 
+    present.&nbsp; Version 10.152</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">15 April 2010</font></p></td>
+<td width="678">
+   
+    A bug in calculating eigenvectors from MOZYME COSMO calculations has been 
+    corrected.&nbsp; Version 10.104</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">9 February 2010</font></p></td>
+<td width="678">
+   
+    Keyword 
+    <font face="Trebuchet MS, Verdana">
+<a href="Manual/pm6_dh2.html"><tt>PM6-DH2</tt></a></font> re-activated. Version 10.040.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">28 January 2010</font></p></td>
+<td width="678">
+   
+    DRC and IRC added to AUX file. Automatic correction of net charge in MOZYME 
+    extended to multi-calculation jobs. Version 10.027.</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">14 January 2010</font></p></td>
+<td width="678">
+   
+    Number of chains allowed in a protein has been increased to 100. An 
+    intermittent error in CG1 and CG2 in Ile has been fixed.&nbsp; Carboxylic 
+    acid -OH now labeled OXT. Increase number of neighboring ions allowed from 
+    10 to 100. Version 10.014</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">18 December 2009</font></p></td>
+<td width="678">
+   
+    Use of the new keyword PM6-DH2 has been delayed.</td>
+</tr>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">17 December 2009</font></p></td>
+<td width="678">
+   
+    New keyword <a href="Manual/pm6_dh2.html"><tt>PM6-DH2</tt></a> improves dispersion 
+    and hydrogen-bonding energies. Version 9.351</td>
+</tr>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">9 December 2009</font></p></td>
+<td width="678">
+   
+    A bug with reaction paths involving Cartesian "y" and "z" coordinates being 
+    printed incorrectly has been fixed.&nbsp; Version 9.341</td>
+</tr>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">29 October 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+   
+    New keywords <tt><a href="Manual/mini.html"><tt>MINI</tt></a>, <a href="Manual/alt_a.html">ALT_A=<i>A</i></a></tt> and
+    <a href="Manual/alt_r.html"><tt>ALT_R=<i>A</i></tt></a>. Version 9.302</td>
+</tr>
+</font>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">8 October 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+   
+    Print information on salt bridges in proteins.&nbsp; Remove requirement that 
+    moving atoms be at the start of the data set in a
+    <a href="Manual/force.html"><tt>FORCETS</tt></a> calculation.&nbsp; Version 9.281.</td>
+</tr>
+</font>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" size="4">28 September 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+   
+    PDB output of&nbsp; Trp corrected,&nbsp; terminator bug fixed, residues can 
+    now start from zero.&nbsp; Version 9.271</td>
+</tr>
+</font>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">18 September 2009</font></p></td>
+<td width="678">
+   
+    New keyword <tt><a href="Manual/site.html">SITE=(<i>text</i>)</a></tt>. All sparkles now require keyword "<a href="Manual/sparkle.html"><tt>SPARKLE</tt></a>".&nbsp; 
+    Academic licenses re-set to expire one year after executable formed. Version 
+    9.261. </td>
+</tr>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">29 August</font><font color="#0000FF" face="Trebuchet MS, Verdana" size="4"> 
+    2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+   
+    Problems with <a href="Manual/vdwm.html"><tt>VDWM</tt></a> corrected. 
+    Keyword <a href="Manual/bigcycles.html"><tt>BIGCYCLES</tt></a> extended to
+    <a href="Manual/drc.html"><tt>DRC</tt></a> normal modes. Version 9.240</td>
+</tr>
+</font>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">30 July 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+   
+    AM1 Mo added (was missing) Version 9.211</td>
+</tr>
+</font>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">8 July 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+<!-- New keyword
+    <a href="Manual/pm6_dh.html"><TT>PM6-DH</TT></a>
+    improves intermolecular
+    <a href="http://pubs.acs.org/doi/abs/10.1021/ct9000922">interaction energies</a>. -->
+
+    Data needed for M.O.s when<font face="Times New Roman"><tt>
+<a href="Manual/mozyme.html">MOZYME</a></tt>
+</font>
+    is used now added to
+    <font face="Trebuchet MS, Verdana">
+<font face="Times New Roman">
+<a href="Manual/auxiliary.html"><tt>AUX</tt></a>
+</font>
+</font>. Version 9.189</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">11 May 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+   
+    New keyword <a href="Manual/coscch.html"><tt>COSCCH</tt></a>. Version 9.126</td>
+</tr>
+</font>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">13 April 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+   
+    New keyword <tt> <a href="Manual/metal.html">METAL</a>. </tt>&nbsp;Version 
+    9.103</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">10 April 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+    A bug in piS(r) in <a href="Manual/super.html"><tt>SUPER</tt></a> has been corrected. 
+    Version 9.100</td>
+</tr>
+</font>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">9 April 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+    In a
+    
+
+    
+ <font face="Times New Roman">
+<tt>
+<a href="Manual/mozyme.html">MOZYME</a> </tt>
+</font>calculation, the number of ligands an atom can have has been extended from 4 to 15.&nbsp;&nbsp; 
+    Version 9.099</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">8 April 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+<p dir="ltr">VDW now works with COSMO. <br/>
+    Geometries printed in Ab-initio internal format now works when supplied 
+    geometry is Cartesian.<br/>
+    Format of Lewis structure improved.&nbsp; Version 9.098</p></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">3 April 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+    Major re-write of construction of Lewis structure in   
+    <a href="Manual/mozyme.html"><tt>MOZYME</tt></a>. Formal oxidation states of 
+    metals used in proteins identified, along with improved diagnostics.&nbsp; Version 9.093</td>
+</tr>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">&nbsp;10 March 
+    2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+    Bug in GRAPHF when MOZYME used with large systems corrected.<br/>
+    Number of points on a reaction path increased from 400 to 4000.&nbsp; 
+    Version 9.069</td>
+</tr>
+</font>
+<font face="Trebuchet MS, Verdana">
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" size="4">&nbsp; 3 March 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+<font face="Times New Roman">
+    Keyword <a href="Manual/auxiliary.html"><tt>AUX</tt></a> extended to allow 
+    variable precision and compression. <br/>
+    New keywords: <a href="Manual/data.html"><tt>DATA</tt></a> and
+    <a href="Manual/hessian.html"><tt>HESSIAN</tt></a>.&nbsp; Version 9.061</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    25 February 2009</font></p></td>
+<td width="678">
+    Keyword <a href="Manual/auxiliary.html"><tt>AUX</tt></a> extended to work with 
+    keyword
+    <a href="Manual/mozyme.html"><tt>MOZYME</tt></a>.&nbsp; Version 9.056</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    24 February 2009</font></p></td>
+<td width="678">
+    If <tt><a href="Manual/xeno.html">XENO</a></tt> name has exactly three letters, the default residue abbreviation 
+    will be replaced by the <tt>XENO</tt> name.&nbsp; Version 9.055</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    14 February 2009</font></p></td>
+<td width="678">
+    Default print of COSMO area and volume extended to systems with 
+    "d"-orbitals. Version 9.045</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    13 February 2009</font></p></td>
+<td width="678">
+    Fault in <a href="Manual/lbfgs.html">LBFGS</a> resulted in too high unoccupied M.O. energy levels. Version 
+    9.044</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    10 February 2009</font></p></td>
+<td width="678">
+    Faults in <a href="Manual/autosym.html">AUTOSYM</a> and
+    <a href="Manual/peci.html">PECI</a> corrected. Version 9.041</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    7 February 2009</font></p></td>
+<td width="678">
+    Correct fault in third atom when dihedral was not supplied.<br/>
+    Remove extra parentheses in print of charged atom.<br/>
+    Correct fault in generation of PDB structure for some non-standard residues<br/>
+    Modify EULA to include distributors . Version 9.038</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    &nbsp;3 February 2009</font></p></td>
+<td width="678">
+    Add printing of dipole vector to MOZYME function (was missing).&nbsp; 
+    Version 9.034</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    &nbsp;22 January 2009</font></p></td>
+<td width="678">
+    Improve output in .arc and .cos files for dielectric and total energies.<br/>
+    Correct mis-identification of terminal ALA, THR, PHE, and PRO<br/>
+    Correct recognition of PRO backbone in PDB output<br/>
+    Allow for substituted nitrogen on N1 of amino acid.&nbsp; Version 9.022</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    &nbsp;15 January 2009</font></p></td>
+<td width="678">
+    Correct error introduced into Lanthanides on 31 December 2008. Version 9.015</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    &nbsp;7 January 2009</font></p></td>
+<td width="678">
+    Format for Second Harmonic Generation NLO first hyperpolarizability beta 
+    values updated to handle very large SHG values ( &gt; 10<sup>21</sup> a.u.). 
+    Version 9.007</td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="180">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">&nbsp;5 
+    January 2009</font></p></td>
+<font face="Times New Roman">
+</font><td width="678">
+<p align="left">Calculation of force constants of a single atom caused a 
+    crash, now corrected.<br/>
+    Progress of construction of Hessian printed when HESS=1 is used and the job 
+    takes a long time<br/>
+    Version letter for Linux systems changed to "L" (was "M")&nbsp; Version 
+    9.005</p>
+</td>
+</tr>
+</font></font></font></font></font></table>
+<h2 align="center">Maintenance Record of MOPAC2009, beta-test</h2>
+</font>
+<table border="1" bordercolor="#111111" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="781">
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">31 December 2008</font></p></td>
+<td width="574">
+<font face="Trebuchet MS" size="2">Geometry optimization format extended 
+    from a maximum of 9999 cycles to 999999 cycles<br/>
+    Bond orders printed for conventional LMOs (when LOCAL is present)<br/>
+<a href="Manual/re-local.html">RE-LOCALIZE</a> extended to geometric operations. <br/>
+<b>Beta-test ended.</b>&nbsp; Version 8.365</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">16 December 2008</font></p></td>
+<td width="574">
+<font face="Trebuchet MS" size="2">Keyword OPT was not being recognized.&nbsp; 
+    Fault corrected. Overlaps in AUX file were faulty if "d" orbitals were 
+    present.&nbsp; Version 8.351</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">15 December 2008</font></p></td>
+<td width="574">
+<font face="Trebuchet MS" size="2">By default, PDB files were converted to 
+    internal coordinates.&nbsp; Now the default is to convert to Cartesian 
+    coordinates.&nbsp; Version 8.350</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">10 December 2008</font></p></td>
+<td width="574">
+<font face="Trebuchet MS" size="2">Bug in optimization labels when dummy 
+    atoms used with XYZ corrected. Version 8.345</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">&nbsp;9 December 
+    2008</font></p></td>
+<td width="574">
+<font face="Trebuchet MS" size="2">Formatting error in label of atom in 
+    MOZYME corrected.&nbsp; Version 8.344</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">10 
+    November 2008</font></p></td>
+<td width="574">
+<font face="Trebuchet MS" size="2">Allow for uncommon Lewis structures, Ti, 
+    Zr, and Hf in MOZYME.&nbsp; Fix bug in ROHF gradients of a single atom. 
+    Version 8.315 </font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">6 
+    November 2008</font></p></td>
+<td width="574">
+<font face="Trebuchet MS" size="2">Add monodentate Zinc to elements 
+    available for use by MOZYME. Version 8.311</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">5 
+    November 2008</font></p></td>
+<td width="574">
+<font face="Trebuchet MS" size="2">Add Platinum to elements available for 
+    use by MOZYME. Version 8.310</font></td>
+</tr>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">4 
+    November 2008</font></p></td>
+<font face="Times New Roman">
+</font><td width="574">
+<font size="2">&nbsp;</font><font size="2"><font face="Trebuchet MS">New 
+    keywords:&nbsp; <a href="Manual/re-local.html">RE-LOCAL</a>,
+    <a href="Manual/reorthog.html">REORTHOG</a> Version 8.309</font></font><font face="Trebuchet MS"></font></td>
+</tr>
+<font face="Times New Roman">
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">1 November 2008</font></p></td>
+<td width="574">
+<p align="center"><font face="Trebuchet MS, Verdana" size="2">&nbsp; <b>NEW MOPAC: MOPAC2009, BETA 
+    VERSION</b></font></p>
+<p>
+<font size="2">New keywords: </font>
+<font face="Trebuchet MS, Verdana">
+<font size="2"> <a href="Manual/allbonds.html">
+    ALLBONDS</a>, </font>
+</font>
+<font face="Trebuchet MS, Verdana">
+<font size="2">
+<a href="Manual/chains.html">CHAINS</a>, </font>
+</font>
+<font face="Trebuchet MS, Verdana">
+<font size="2">
+<a href="Manual/charges.html">CHARGES</a>,</font></font><font size="2"> </font>
+<font face="Trebuchet MS, Verdana">
+<font size="2"> <a href="Manual/cutoff.html">CUTOFF</a>,&nbsp; </font>
+</font>
+<font face="Trebuchet MS, Verdana">
+<font size="2">
+<a href="Manual/eigen.html">EIGEN</a>,&nbsp; </font>
+</font>
+<font face="Trebuchet MS, Verdana" size="2"> <a href="Manual/geo_ref.html">GEO_REF</a>,&nbsp; <a href="Manual/lewis.html">LEWIS</a>,</font><font size="2">
+<a href="Manual/residues.html">RESIDUES</a>, <a href="Manual/rapid.html">
+    RAPID</a>, </font>
+<font face="Trebuchet MS, Verdana">
+<font size="2"> <a href="Manual/reseq.html">RESEQ</a>, </font>
+</font>
+<font face="Trebuchet MS, Verdana" size="2">&nbsp;<a href="Manual/pdbout.html">PDBOUT</a>, </font>
+<font size="2"> <a href="Manual/start_res.html">START_RES</a>,<font face="Trebuchet MS, Verdana">
+<a href="Manual/mozyme.html">MOZYME</a>,&nbsp;
+</font>
+<a href="Manual/pdb.html">PDB</a>, <a href="Manual/pdb_text.html">
+    PDB=(text)</a>, <a href="Manual/xeno.html">XENO</a> Version 8.303</font></p></td>
+</tr>
+</font></table>
+<h2 align="center">Maintenance Record of the now-obsolete MOPAC2007</h2>
+</font><font face="Trebuchet MS, Verdana">
+</font><center>
+<table border="1" bordercolor="#111111" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="781">
+<tbody>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">27 October 2008</font></p></td>
+<td width="574">
+<font size="2">Gradients added to AUX file Version 8.301</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center"><font color="#0000FF" size="4">13 October 2008</font></p></td>
+<td width="574">
+<font size="2">Sparkles added for PM6 elements La, Ce, Pr, Nd, Sm, Eu, Gd, 
+    Tb, Dy, Ho, Er, Yb, and Lu (To use these, add keyword SPARKLES)<br/>
+    Termination dialogue removed.<br/>
+    Error in working of "+" keyword corrected.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    Version 8.287</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" width="166">
+<p align="center"><font color="#0000FF" size="4">23 July 2008</font></p></td>
+<td width="574">
+<font size="2">Criterion for zero degree torsion decreased from 4x10(-4) to 
+    4x10(-5) Angstroms (Caused gradient errors of ~0.1 kcal/mol/A)<br/>
+    Re-oriented geometries in FORCE calculation printed to AUX file<br/>
+    Definition of linear molecules in THERMO calculation improved (Large 
+    molecules were all defined as linear)&nbsp;&nbsp; Version 8.205</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">15 July 2008</font></p></td>
+<td width="574">
+<font size="2">SYMMETRY with STATIC generated faulty output. <br/>
+    Atomic corrections added to polarizability of MNDO, AM1, and PM3.&nbsp; Version 8.197</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" size="4">28 May 2008</font></p></td>
+<td width="574">
+<font size="2">&nbsp;Symmetry of M.O.s added to FORCE AUX file, Version 
+    8.148</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">16 May 2008</font></p></td>
+<td width="574">
+<font size="2">Fault in atom 3 if "z" coordinate was exactly 2.0 corrected, 
+    Version 8.137</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">29 April 2008</font></p></td>
+<td width="574">
+<font size="2">Fault in geometry optimization that caused an infinite loop 
+    fixed. Version 8.119</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">31 March 2008</font></p></td>
+<td width="574">
+<font size="2">Format for AUX extended to handle up to 9999 orbitals<br/>
+    Bug in ENPART for transition metals corrected. Version 8.087</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" size="4">27 March 2008</font></p></td>
+<td width="574">
+<font size="2">THERMO properties now use all vibrations (Previously 
+    vibrations &lt; 100 cm(-1) were ignored)<br/>
+    Many small changes to format statements made.<br/>
+    Several internal inconsistencies corrected - HoF should change by ~0.0001 
+    kcal/mol<br/>
+    Infinite loop in POLAR corrected </font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">1 February 2008</font></p></td>
+<td width="574">
+<font size="2">Fault in beta M.O.s in &lt;file&gt;.mgf corrected.<br/>
+    AUX(0) keyword extended to AUX(n), where n is the output channel number for 
+    changing geometry</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" size="4">17 January 2008</font></p></td>
+<td width="574">
+<font size="2">AUX(0) now outputs changing geometry to STDOUT (for use by 
+    GUI's)<br/>
+    Information on BONDS and HESSIAN now added to AUX file<br/>
+    SINGLET and UHF with odd-electron systems is now flagged as a fault<br/>
+    Many static and dynamic arrays now made allocatable - reduces memory demand<br/>
+    Array bounds errors in COSMO corrected</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">16 November 2007</font></p></td>
+<td width="574">
+<font face="Trebuchet MS, Verdana" size="2">Localized M.O.s added to
+    <a href="Manual/graph.html">MGF</a> 
+    file<br/>
+    Faulty error message in the L-BFGS optimizer corrected<br/>
+    L-BFGS now the default geometry optimizer for systems with 2000 or more 
+    variables<br/>
+    Keyword EF modified<br/>
+    Keyword <a href="Manual/lbfgs.html"><tt>LBFGS</tt></a> added</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">22 October 2007</font></p></td>
+<td width="574"><font size="2">Full reference for PM6 added: J. J. P. 
+    Stewart, J. Mol. Mod., 13, 1173-1213 (2007)<br/>
+    Version 7.295</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">17 October 2007</font></p></td>
+<td width="574"><font size="2">New keyword "<a href="Manual/rhf.html">RHF</a>".&nbsp;
+    <br/>
+    Units added to beta and gamma in <a href="Manual/polar.html">POLAR</a></font><br/>
+<font size="2">Localized M.O.s added to <a href="Manual/auxiliary.html">AUX</a> 
+    file<br/>
+    Version 7.290</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">3 October 2007</font></p></td>
+<td width="574"><font size="2">Keyword "OPT-S" now works.<br/>
+    New version of MOPAC2007 suitable for use with ChemBio3D made<br/>
+    Version 7.276</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" size="4">19 September 2007</font></p></td>
+<td width="574"><font face="Trebuchet MS, Verdana" size="2">PM6 Ce(3+) added 
+    as sparkle<br/>
+</font><font size="2">Last "d" atomic orbital re-named "xy", was "xz"<br/>
+    In gpt files first virtual one-electron eigenvalue was missing<br/>
+    Formatting of vibration analysis corrected (some lines has two spaces 
+    missing)<br/>
+    PM6 reference added<br/>
+    Version 7.262</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" size="4">10 September</font></p></td>
+<td width="574"><font size="2">On-line
+    <a href="http://www.springerlink.com/content/ar33482301010477/fulltext.pdf">
+    PM6 journal article</a>,
+    <a href="http://www.springerlink.com/content/ar33482301010477/894_2007_Article_233_ESM.html">
+    supplementary material</a><br/>
+    The pKa calculation has been updated.<br/>
+    Add phase-lock to normal modes (Helps reduce platform dependence)<br/>
+    Add reduced masses to vibrational analysis<br/>
+    Several formats changed to allow for larger numbers (atoms, NLO beta and 
+    gamma, etc.)<br/>
+    Version 7.253</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" size="4">9 August 2007</font></p></td>
+<td width="574"><font size="2">Bugfix: ESP was giving faulty results when 
+    charged species were used<br/>
+    Restrict PMEP to AM1 calculations<br/>
+    Add journal reference to PMEP, send PMEP output to correct file<br/>
+    Remove keywords DIPOLE, DIPX=n.nn, DIPY=n.nn, and DIPZ=n.nn (They had never 
+    worked!)<br/>
+    Restrict lower bound of dielectric constant to 1.00 (Vacuum)<br/>
+    Allow SYMMETRY to be used in defining geometry of a DRC or IRC<br/>
+    Extend formats to allow up to 999 atoms<br/>
+    Add memory error bugtraps<br/>
+    Restrict translation vectors to be at the end of the Z-matrix<br/>
+    Version 7.221</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">&nbsp;19 July 2007</font></p></td>
+<td width="574"><font size="2">A fault that prevented the DRC restart has 
+    been fixed. <br/>
+    Tabs now allowed in data sets. <br/>
+    Format of vibrations extended from 99 atoms to 999. <br/>
+    Suppress generation of *.solid file. <br/>
+    Increase default steps in geometry optimization from 1000 to 2000. <br/>
+    Print energy term arising from pressure acting on volume of solid.<br/>
+    Version 7.200</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">&nbsp;3 July 2007</font></p></td>
+<td width="574"><font size="2">Update PM6 references from "to be submitted" 
+    to "Accepted, 6/27/2007". Add bugtrap if C.I. is too big. Version 7.184</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">&nbsp;22 June 2007</font></p></td>
+<td width="574"><font face="Trebuchet MS, Verdana" size="2">The "+" keyword 
+    was faulty - second line of keywords was sometimes not read.&nbsp; </font>
+<font size="2">Remove obsolete "pagethrow" command. Allow 0SCF with 
+    open-shell RHF. Improve output layout when active space is larger than 19 
+    M.O.s. Kill multi-job calculation if a job has zero atoms.&nbsp; Version 
+    7.173.</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" size="4">&nbsp;4 June 2007</font></p></td>
+<td width="574"><font size="2">New keyword <a href="Manual/auxiliary.html">AUX</a> added. Format of first line 
+    of ARC geometry was faulty. Error traps added to C.I. Possible fault in pKa 
+    of acetylacetone fixed. Version 7.155</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" size="4">7 May 2007</font></p></td>
+<td width="574"><font size="2">A fault in the printing of Cartesian symmetry 
+    functions has been corrected. Version 7.127</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    11 April 2007</font></p></td>
+<td width="574"><font size="2">More modifications to GRAPHF. Version 7.101</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    3 April 2007</font></p></td>
+<td width="574"><font size="2">Add data to GRAPHF output to allow Jmol to 
+    recognize file. Version 7.093</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    30 March 2007</font></p></td>
+<td width="574"><font size="2">Faults in read and print of Gaussian format 
+    fixed. Parameters for copper updated (CuCl4(=) now planar, was Td). Version 
+    7.090</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    13 March 2007</font></p></td>
+<td width="574"><font size="2">PM3 sparkle parameters for all lanthanides 
+    added (Contribution from Prof. Simas's group at the U. of Pernambuco).&nbsp; 
+    Parameters for Ca minerals updated. Version 7.075</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    13 March 2007</font></p></td>
+<td width="574"><font size="2">Diatomic parameters for&nbsp; 
+    aluminum-silicon interaction were missing, results for aluminosilicate 
+    minerals was nonsense. Version 7.072</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    7 March 2007</font></p></td>
+<td width="574"><font size="2">Fault in SADDLE when BFGS was used in LINUX 
+    version. Formatted GRAPH output added (use keyword GRAPHF). Version 7.066</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<font face="Trebuchet MS, Verdana">
+<p align="center"><font color="#0000FF" face="Trebuchet MS, Verdana" size="4">
+    6 
+    March 2007</font></p></font></td>
+<td width="574"><font size="2">Fault in input of Gaussian format Z-matrix 
+    fixed. Notes in data sets now output in ARC files. Version 7.065</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" size="4">5</font><font color="#0000FF" face="Trebuchet MS, Verdana" size="4"> 
+    March 2007</font></p></td>
+<td width="574"><font size="2">Keywords OPT-C, OPT-N, and OPT-O written. 
+    Version 7.064</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">2 March 2007</font></p></td>
+<td width="574"><font size="2">The message "1SCF WAS SPECIFIED..." was being 
+    printed when it shouldn't be. Version 7.061</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">1 March 2007</font></p></td>
+<td width="574"><font size="2">"days remaining" added, number of characters 
+    in atom labels increased to 38 (was 14). Version 7.060</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">&nbsp;27 February 2007</font></p></td>
+<td width="574"><font size="2">Unwanted files (&lt;file&gt;.temp and &lt;file&gt;.31) 
+    now deleted. The SYBYL function added. A bug in the GRID and a bug in MECI 
+    corrected. Version 7.058</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">&nbsp;22 February 2007</font></p></td>
+<td width="574"><font size="2">A fault in the layout of the GRID was found 
+    and fixed. A fault in reading Z-matrix lines of 81-119 characters was found 
+    and fixed. Version 7.053 </font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000FF" face="Trebuchet MS, Verdana" size="4">&nbsp;20 February 2007</font></p></td>
+<td width="574"><font size="2">Fault in PATHS found and fixed.&nbsp; 
+    Version: 7.051</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000FF" size="4">&nbsp;18 February 2007</font></p></td>
+<td width="574"><font size="2">AM1 Lanthanide sparkles were faulty.&nbsp; 
+    Now corrected.&nbsp; Version: 7.049</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000ff" face="Trebuchet MS, Verdana" size="4">12 February 2007</font></p></td>
+<td width="574"><font size="2">The variant of keyword ROOT was faulty.&nbsp; 
+    "ROOT=n" worked, but, e.g.,&nbsp; "ROOT=3T2g" did not work.&nbsp; The 
+    associated density matrix was faulty.&nbsp; If you use the variant 
+    "ROOT=n&lt;Irreducible Representation&gt; form, then download the latest version.</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000ff" face="Trebuchet MS, Verdana" size="4">6 February 2007</font></p></td>
+<td width="574"><font size="2">An error would occur in large systems when 
+    the Solvent Accessible Surface was being calculated.&nbsp; This has been 
+    corrected. If your jobs crash with the message "Unable to allocate memory in 
+    subroutine COSINI", download the latest version.</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center">
+<font color="#0000ff" face="Trebuchet MS, Verdana" size="4">&nbsp;26 January 2007</font></p></td>
+<td width="574"><font size="2">COSMO with UHF for systems with &lt;S**2&gt; &gt; 0.0 
+    were faulty.&nbsp; If you are calculating UHF open-shell solvated systems, 
+    download the latest version.</font></td></tr>
+<tr>
+<td bgcolor="#ffffcc" valign="top" width="166">
+<p align="center"><font color="#0000ff" face="Trebuchet MS, Verdana" size="4">&nbsp;26 
+    January 
+    2007</font></p></td>
+<td width="574"><font size="2">&nbsp;Very large systems caused a stack overflow.&nbsp; 
+    The faulty array was changed from dynamic to allocatable.&nbsp; If you get 
+    the message: <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forrtl: severe (170): Program Exception - stack 
+    overflow<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; MOPAC2009.exe&nbsp; 00466B70&nbsp;&nbsp; PRJFC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    1145&nbsp;&nbsp;&nbsp;&nbsp; ef. F90<br/>
+    download the latest version. </font></td></tr>
+</tbody></table>
+</center>
+<p>Any bugs reported will be corrected as quickly as possible.&nbsp;&nbsp; </p>
+<p><font size="1">
+Copyright 
+2007, Stewart Computational Chemistry. </font>
+</p>
+<p>&nbsp;</p>
+</center></body></html>

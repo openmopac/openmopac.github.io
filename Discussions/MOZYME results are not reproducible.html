@@ -1,0 +1,98 @@
+<html><head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTDKH6F');</script>
+<!-- End Google Tag Manager -->
+
+<title>MOZYME results are not reproducible</title>
+<style type="text/css">
+.auto-style1 {
+	text-decoration: underline;
+}
+</style>
+</head>
+<body link="#0000ff" vlink="#0000ff">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDKH6F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+&nbsp; (<a href="Discussion_topics.html">back to discussion topics</a>)<h1 align="center">
+MOZYME results are not reproducible</h1>
+<p>When a geometry is optimized using <a href="../Manual/mozyme.html"><tt>MOZYME</tt></a>, and a single-point calculation is 
+run on the final geometry, sometimes the results of the single-point calculation 
+do not match those of the full geometry optimization.&nbsp; This can be very 
+frustrating, and can call into question the whole idea of reproducibility.&nbsp; 
+So what went wrong?</p>
+<h3>Ground-state Systems</h3>
+<p>In all cases examined, the same error occurred every time.&nbsp; When a 
+MOZYME calculation is run, it starts by building a Lewis structure for the 
+system.&nbsp; This Lewis structure is based on the topology of the supplied 
+geometry. If the geometry supplied is severely in error, then the Lewis 
+structure will have an error.&nbsp; During the geometry optimization, all, or at 
+least most, of the geometric errors are corrected by the energy minimization 
+procedure.&nbsp; The final geometry will be much better, i.e., will be 
+chemically more realistic, than the starting structure.&nbsp; If a single point 
+calculation is then run on the final geometry, the correct or more correct Lewis 
+structure will be used.&nbsp; Because a more correct structure is used, the 
+computed heat of formation will be lower than that of the previous run, unless 
+the net charge becomes more positive.&nbsp;&nbsp; If the net charge on the 
+system changes in going from the starting geometry to the optimized geometry, 
+that indicates a significant change in bonding, a change that should definitely 
+be investigated before proceeding any further.</p>
+<h4>Corrective procedure</h4>
+<p>The procedure for handling this fault is also the same in each case.&nbsp; 
+First, do not simply add or remove covalent bonds to fix the fault.&nbsp; It's 
+better to regard the failure of MOZYME as an indication of a specific fault in 
+the initial data set (although on rare occasions, the fault might be in the 
+final data set).&nbsp; Run both the starting and optimized geometries using 
+keyword <a href="../Manual/lewis.html"><tt>LEWIS</tt></a>, and compare the 
+output files. Go to the bottom of these files, and look for the charges on the 
+various atoms.&nbsp; Examine each case where the charges differ.&nbsp; Some 
+differences might be due to the formation of salt bridges. When a salt bridge 
+forms, a cation and an anion are created; these are natural structures and after identifying them 
+(look at them using a GUI), they 
+can be ignored.&nbsp;What you're looking for are charges the are 
+present in one file but are not present in the other. As each one is found, 
+<span class="auto-style1">carefully</span> examine the location of the charge, and determine if it should be 
+charged or uncharged.&nbsp; To assist in the examination of the site, use the 
+Lewis structure that is printed in the output files.&nbsp; At first, this might 
+seem difficult, but after doing it once or twice the procedure becomes quite 
+easy.&nbsp; The action that is taken once the fault is positively identified depends on what 
+caused the fault.&nbsp; If there is an extra hydrogen atom, or a hydrogen atom 
+missing, edit the geometry to suit.&nbsp; If a bond-length is incorrect so that 
+the topology is in error, use <a href="../Manual/CVB.html"><tt>CVB</tt></a> to to correct 
+the topology.</p>
+<p>Once all errors (normally only one) in the data set are identified and 
+corrected, re-run the job.</p>
+<h3>Transition State Systems </h3>
+<p>When locating, optimizing, or characterizing a transition state, a very 
+specific problem often occurs.&nbsp; Typically, in a transition state, a 
+covalent bond is made or broken.&nbsp; Consider for example, a hydroxyl group 
+adding across a peptide bond (-CO-NH-).&nbsp; The transition state might consist 
+of the four-membered ring -[O-(C=O)-(NH)-H]-. It would be hard to draw a Lewis 
+structure for this system, and the MOZYME technique would normally fail to 
+generate an acceptable starting Lewis structure. At first sight, then, it would 
+appear that MOZYME cannot be used for modeling transition states, but in fact 
+getting transition states to run is straightforward. </p>
+<h4>Corrective procedure</h4>
+<p>As with ground-state systems, identify the charges associated with the 
+transition state.&nbsp; The Lewis structure generator in MOPAC often makes 
+mistakes when trying to process transition states.&nbsp; Assuming that it does 
+make a mistake in the optimized or 
+refined transition state (the commonest scenario), use <a href="../Manual/CVB.html"><tt>CVB</tt></a> 
+to make or break bonds so that the topology is simplified.&nbsp; Use the 
+topography printed in the output file to characterize the environment of the 
+transition state, and to identify the changes that would need to be made in 
+order to have a sensible Lewis structure.&nbsp; For example, in the case of the 
+four-membered ring just described, if the topography indicates that the atoms 
+forming the ring are, in fact, connected, then use <a href="../Manual/CVB.html"><tt>CVB</tt></a> 
+to break the "-O-(C=O)-" bond and the "-(NH)-H-" bond.&nbsp; This would then 
+result in a simple topography corresponding to the unreacted structure.</p>
+</body></html>

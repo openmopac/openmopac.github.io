@@ -1,0 +1,293 @@
+<html><head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTDKH6F');</script>
+<!-- End Google Tag Manager -->
+
+<title>MOPAC Discussion topic: MOZYME and Excited States</title>
+<style type="text/css">
+.auto-style1 {
+	font-family: Symbol;
+}
+.auto-style2 {
+	text-align: center;
+}
+.auto-style3 {
+	text-align: center;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style4 {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style5 {
+	text-align: center;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style6 {
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style7 {
+	text-align: center;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-bottom-width: medium;
+}
+.auto-style8 {
+	text-align: center;
+	border-top-style: none;
+	border-top-width: medium;
+}
+.auto-style10 {
+	border: 1px solid #FFFFFF;
+	text-align: center;
+}
+</style>
+</head>
+<body link="#0000ff" vlink="#0000ff">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDKH6F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+&nbsp; (<a href="Discussion_topics.html">back to discussion topics</a>)<h1 align="center" dir="rtl">MOZYME and Excited States</h1>
+<p>For most systems, a calculation run using the linear scaling method MOZYME 
+will produce the same result as a calculation run using conventional SCF 
+methods.&nbsp; In some systems, however, a MOZYME calculation will result in a 
+heat of formation that is significantly greater than that predicted using 
+conventional methods.&nbsp; 
+The questions that come to mind are:</p>
+<p>(A) Under what conditions would MOZYME produce a <span class="auto-style1">D</span>H<sub>f</sub> 
+that is significantly greater than that predicted by conventional methods?<br/>(C) What is the cause of the <span class="auto-style1">D</span>H<sub>f</sub> 
+being different, depending on how the SCF equations are solved?<br/>(D) What are the implications of the different <span class="auto-style1">D</span>H<sub>f</sub>?</p>
+<h3 class="auto-style2">&nbsp;Discussion of why MOZYME 
+sometimes produces a <span class="auto-style1">D</span>H<sub>f</sub> 
+that is significantly greater than that predicted by conventional methods</h3>
+<p></p><table align="right" cellpadding="0" cellspacing="0" class="auto-style10" style="width: 192pt" width="256">
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" colspan="4" style="width: 142pt">
+<span class="auto-style1">&nbsp;D</span>H<span class="auto-style12"><sub>f</sub></span>&nbsp;(Kcal/mol)  
+		Gas-phase</td>
+</tr>
+<tr>
+<td class="auto-style5" style="height: 28pt; width: 42pt">
+		n</td>
+<td class="auto-style4" style="width: 48pt; height: 28pt;" width="64">MOPAC</td>
+<td class="auto-style4" style="width: 48pt; height: 28pt;" width="64">MOZYME</td>
+<td class="auto-style5" style="width: 48pt; height: 28pt;" width="64">Diff</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style3" height="20" style="height: 15.0pt; width: 42pt;">1</td>
+<td align="right" class="auto-style7">-31.45</td>
+<td align="right" class="auto-style7">-31.45</td>
+<td class="auto-style3">0.00</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">2</td>
+<td align="right" class="auto-style8">2.10</td>
+<td align="right" class="auto-style8">2.10</td>
+<td align="right" class="auto-style2">0.00</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">3</td>
+<td align="right" class="auto-style2">18.31</td>
+<td align="right" class="auto-style2">18.32</td>
+<td align="right" class="auto-style2">0.01</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">4</td>
+<td align="right" class="auto-style2">33.23</td>
+<td align="right" class="auto-style2">37.15</td>
+<td align="right" class="auto-style2">3.92</td>
+</tr>
+<td class="auto-style2" style="width: 42pt">5</td>
+<td class="auto-style2">41.14</td>
+<td align="right" class="auto-style2">49.92</td>
+<td align="right" class="auto-style2">8.78</td>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">6</td>
+<td align="right" class="auto-style2">44.39</td>
+<td align="right" class="auto-style2">57.89</td>
+<td align="right" class="auto-style2">13.50</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">7</td>
+<td align="right" class="auto-style2">43.63</td>
+<td align="right" class="auto-style2">58.81</td>
+<td align="right" class="auto-style2">15.18</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">8</td>
+<td align="right" class="auto-style2">46.44</td>
+<td align="right" class="auto-style2">69.29</td>
+<td align="right" class="auto-style2">22.85</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">9</td>
+<td align="right" class="auto-style2">48.75</td>
+<td align="right" class="auto-style2">73.76</td>
+<td align="right" class="auto-style2">25.01</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style6" height="20" style="height: 15.0pt; width: 42pt;">10</td>
+<td class="auto-style6">42.39</td>
+<td class="auto-style6">69.03</td>
+<td class="auto-style6">26.64</td>
+</tr>
+</table>
+<span style='font-size: 11.0pt; line-height: 115%; font-family: "Calibri","sans-serif"; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: "Times New Roman"; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA'><img height="107" src="Di-carboxylate-di-ammine.gif" style="float: left" width="269"/></span>
+
+The MOZYME technique starts with a Lewis structure.&nbsp; Lewis structures for 
+most systems are straightforward, thus in a carboxylic acid group, -COOH, the 
+oxygen atom that is singly bonded to the carbon atom is also singly bonded to 
+the hydrogen atom, and has two lone pairs. If the hydrogen atom is removed, then the 
+oxygen atom it was attached to is given three lone pairs, and a negative charge, 
+resulting in a -COO(-), or carboxylate group.&nbsp; The resulting electric charge could be 
+stabilized by a nearby positive charge, and would be de-stabilized by a nearby 
+negative charge.
+
+<p>&nbsp;Consider now the systems consisting of a number, n, of methylene groups 
+forming a chain, at one end there is a doubly-ionized glutarate group, and at 
+the other end is a doubly-ionized 1,3-diammino propyl group, see figure.&nbsp; 
+Single SCF calculations (<a href="../Manual/one_scf.html"><tt>1SCF</tt></a>) were 
+run on each system using the conventional SCF calculation, call this MOPAC, and 
+also using the MOZYME method of solving the SCF equations.&nbsp; For small 
+values of n, MOPAC gave the same 
+result as a MOZYME calculation, see table headed "Gas-phase," but for larger 
+values of n, the MOZYME results gave <span class="auto-style1">D</span>H<sub>f</sub> 
+that were greater than the MOPAC results.&nbsp; Unless a mistake is made, by 
+definition, the lower the energy the better, so there is an apparent fault in 
+the MOZYME results.</p><p>An examination of the charges on the atoms in the systems 
+where the MOPAC and MOZYME results are different shows that in the MOPAC results 
+the net charge on the diammine end converges on&nbsp; +1.0 as n increases, while 
+the MOZYME charge stays at ca. +2.0.&nbsp; A similar trend occurs at the 
+di-carboxylate end, where the MOPAC charge converges on -1.0 and the MOZYME 
+charge stays at ca. -2.0. The effect of the charged ends is also reflected in 
+the dipole moments.&nbsp; For n=10, these are 97.5D (MOPAC) and 151.7D (MOZYME).</p><p>
+The systems being used are, however, very artificial.&nbsp; In the MOPAC 
+calculations, the energy can be lowered by forming a radical, where two of the 
+electrons on the di-carboxylate end are moved to the diammine end of the 
+molecule.&nbsp; That this occurs can be verified by running a UHF calculation on 
+the various systems.&nbsp; Where the MOPAC and MOZYME results agree, the &lt;S<sup>2</sup>&gt; 
+is zero, where they differ, the &lt;S<sup>2</sup>&gt; is non-zero.</p><p></p><table align="right" cellpadding="0" cellspacing="0" class="auto-style10" style="width: 192pt" width="256">
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" colspan="4" style="width: 142pt">
+<span class="auto-style1">&nbsp;D</span>H<span class="auto-style12"><sub>f</sub></span>&nbsp;(Kcal/mol)  &nbsp;In 
+		water</td>
+</tr>
+<tr>
+<td class="auto-style5" style="height: 28pt; width: 42pt">
+		n</td>
+<td class="auto-style4" style="width: 48pt; height: 28pt;" width="64">MOPAC</td>
+<td class="auto-style4" style="width: 48pt; height: 28pt;" width="64">MOZYME</td>
+<td class="auto-style5" style="width: 48pt; height: 28pt;" width="64">Diff</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style3" height="20" style="height: 15.0pt; width: 42pt;">1</td>
+<td align="right" class="auto-style7">-224.74</td>
+<td align="right" class="auto-style7">-224.73</td>
+<td class="auto-style3">0.01</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">2</td>
+<td align="right" class="auto-style8">-232.52</td>
+<td align="right" class="auto-style8">-232.51</td>
+<td align="right" class="auto-style2">0.01</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">3</td>
+<td align="right" class="auto-style2">-236.79</td>
+<td align="right" class="auto-style2">-236.78</td>
+<td align="right" class="auto-style2">0.01</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">4</td>
+<td align="right" class="auto-style2">-235.95</td>
+<td align="right" class="auto-style2">-235.95</td>
+<td align="right" class="auto-style2">0.00</td>
+</tr>
+<td class="auto-style2" style="width: 42pt">5</td>
+<td class="auto-style2">-240.18</td>
+<td align="right" class="auto-style2">-240.17</td>
+<td align="right" class="auto-style2">0.01</td>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">6</td>
+<td align="right" class="auto-style2">-244.97</td>
+<td align="right" class="auto-style2">-244.96</td>
+<td align="right" class="auto-style2">0.00</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">7</td>
+<td align="right" class="auto-style2">-255.19</td>
+<td align="right" class="auto-style2">-255.19</td>
+<td align="right" class="auto-style2">0.00</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">8</td>
+<td align="right" class="auto-style2">-254.27</td>
+<td align="right" class="auto-style2">-254.27</td>
+<td align="right" class="auto-style2">0.00</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style2" height="20" style="height: 15.0pt; width: 42pt;">9</td>
+<td align="right" class="auto-style2">-259.07</td>
+<td align="right" class="auto-style2">-259.06</td>
+<td align="right" class="auto-style2">0.01</td>
+</tr>
+<tr height="20" style="height: 15.0pt">
+<td class="auto-style6" height="20" style="height: 15.0pt; width: 42pt;">10</td>
+<td class="auto-style6">-268.99</td>
+<td class="auto-style6">-268.99</td>
+<td class="auto-style6">0.00</td>
+</tr>
+</table>
+
+
+This option, moving two electrons from one end of the molecule to the other, is 
+not available in the MOZYME technique.&nbsp; In the MOZYME technique the 
+Localized Molecular Orbitals form a barrier to migration of electrons.&nbsp; If 
+the starting Lewis structure is incorrect, there is no path within the LMO SCF 
+calculation to allow large distance motion of electron pairs.<p>Does this 
+represent a fault or limitation of the MOZYME method?&nbsp; In short, the answer 
+is no, for several reasons:</p><ul>
+<li>The completely artificial nature of the systems described here - highly 
+	ionic, gas-phase species - never occurs naturally.&nbsp; The species were 
+	deliberately selected to illustrate the issue described here. </li>
+<li>If an ionic organic system can be stabilized by forming a radical, the 
+	system must necessarily be of high energy. Such a system could be more 
+	easily stabilized by migration of protons, thus neutralizing the charges.
+	</li>
+<li>While the MOPAC result is better, in that the energy is lower than the 
+	MOZYME result, the energy can be still further decreased by running the 
+	calculation using the UHF method. The MOPAC RHF result is thus not the 
+	correct minimum, albeit it is better than the MOZYME result.</li>
+<li>The MOZYME result can be generated by a simple C.I. calculation starting 
+	with the MOPAC result, showing that both wavefunctions are stationary points 
+	in wavefunction space.&nbsp; </li>
+<li>If the systems are stabilized by solvation using water, the MOPAC and 
+	MOZYME results agree for all values of n, see table headed "In water," 
+	illustrating the fact that the different results obtained using MOPAC and 
+	MOZYME were due to the highly artificial nature of the species. </li>
+<li>The conventional MOPAC method fails quite often when very exotic systems 
+	are modeled.&nbsp; The MOZYME technique is more stable, and can frequently 
+	generate a SCF where MOPAC fails.</li>
+</ul>
+<p>Archive files, that can be used as MOPAC data-sets, for MOPAC and MOZYME 
+calculations in gas-phase and in solution can be
+<a href="di-carboxylate-di-ammines.zip">downloaded</a>.</p>
+</body></html>
