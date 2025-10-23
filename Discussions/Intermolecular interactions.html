@@ -1,0 +1,142 @@
+<html><head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTDKH6F');</script>
+<!-- End Google Tag Manager -->
+
+<title>MOPAC Discussion topic: Intermolecular interactions</title>
+</head>
+<body link="#0000ff" vlink="#0000ff">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDKH6F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+(<a href="Discussion_topics.html">back to discussion topics</a>)<h1 align="center" dir="rtl">&nbsp; 
+Intermolecular interactions</h1>
+<p>&nbsp;</p>
+<p>For the purpose of this discussion, only the simplest of interacting species 
+will be considered, i.e., precisely two species, <strong>A</strong> and <strong>
+B</strong>.&nbsp; These can be monatomic, e.g. Hg, monatomic ions, e.g. [Cl]<sup>-</sup>, 
+polyatomic molecules, e.g., aniline, C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub>, 
+or polyatomic ions, e.g. hydrogen sulfate, [HSO<sub>4</sub>]<sup>-</sup>. There 
+are several types of intermolecular interactions involving <strong>A</strong> 
+and <strong>B</strong>:</p>
+<ul>
+<li>"Covalent" - arising from quantum chemical contributions.&nbsp; Since 
+	intermolecular interactions imply the absence of covalent interactions (the 
+	distance between the interacting species is too large, by definition) there 
+	are no covalent bonds, <em>per se</em>, but there are very small energy 
+	contributions resulting from the overlap of atomic orbitals.&nbsp; These 
+	contributions are small relative to the other intermolecular interactions, 
+	and indeed become vanishingly small outside about two times the covalent 
+	distance, and can thus also be ignored in this discussion.<br/></li>
+<li>Electrostatic - arising from the partial charge on each atom, <strong>a</strong>, 
+	in <strong>A</strong> interacting with the partial charge on each atom,
+	<strong>b</strong>, in <strong>B</strong>. Electrostatic interactions 
+	decrease only slowly with distance, the energy falling off as the reciprocal 
+	of the interatomic distance, i.e., as 1/(R<strong>ab</strong>). Although 
+	they can be large, electrostatic terms are simple to calculate and will not 
+	be considered further.<br/></li>
+<li>Dispersion, otherwise known as van der Waals or VDW interactions, or 
+	London forces - arising from the instantaneous correlation of electrons.&nbsp; 
+	Like most quantum chemical theoretical methods, NDDO-type semiempirical 
+	methods use molecular orbitals to solve the Hartree-Fock equations.&nbsp; 
+	This is an approximation to the correct wavefunction, a good approximation, 
+	but not perfect.&nbsp; The use of M.O.s implies that the motion of the 
+	electrons is not correlated.&nbsp; Correlation of electrons is a 
+	time-dependent phenomenon, and results when one electron interacts with 
+	another electron.&nbsp; At each instant of time, the two electrons will 
+	endeavor to avoid each other, because of electrostatic repulsion.&nbsp; 
+	Dispersion energies can be quite large for nearby atoms, but fall of as the 
+	sixth power of the distance, i.e., as 1/(R<strong>ab</strong>)<sup>6</sup>.<br/>
+</li>
+<li>Hydrogen bonds - a unique type of interaction that typically involves 
+	three atoms, with the middle atom being hydrogen.&nbsp; The commonest 
+	hydrogen bonds are of the type O-H - O and O-H - N. Hydrogen bonds could be 
+	regarded as a special case of electrostatics, dispersion and covalent 
+	interactions, but because of their great importance, and because they are 
+	not, in practice, well reproduced by these other terms, they are now added 
+	in <em>post-hoc</em> to the energy terms.</li>
+</ul>
+<h3>Dispersion terms</h3>
+<p>Dispersion terms are particularly hard to calculate <em>de novo</em>.&nbsp; 
+The strategy used in MOPAC is to use published benchmark calculations as a 
+source of specific intermolecular interaction energies.&nbsp; In PM7, these are 
+then used in parameterizing a simple function in the parameter optimization 
+procedure used in developing a new method. In PM6-DH2 and PM6-DH+ the method 
+described in "A Transferable H-bonding Correction For Semiempirical 
+Quantum-Chemical Methods" Martin Korth, Michal Pitonak, Jan Rezac and Pavel 
+Hobza, J Chem Theory and Computation 6:344-352 (2010) is used.&nbsp; In PM6-D3, 
+the method used is described in "A consistent and accurate ab initio 
+parametrization of density functional dispersion correction (DFT-D) for the 94 
+elements H-Pu"&nbsp; S. Grimme, J. Antony, S. Ehrlich, H. Krieg, THE JOURNAL OF 
+CHEMICAL PHYSICS 132, 154104 .2010.&nbsp; Published reports indicate that the 
+most accurate semiempirical method for predicting intermolecular interaction 
+energies is PM6-D3H4.&nbsp; This method has not been included in MOPAC, because 
+by the time all the other methods had been included, enthusiasm for yet another 
+method had vanished see also below.</p>
+<h3>Hydrogen bond terms</h3>
+<p>The energy correction due to a hydrogen bond is quite large, in the order of 
+several kcal/mol.&nbsp; Despite it being so important, the functional forms of 
+the hydrogen bond have been developed using purely pragmatic reasoning&nbsp; 
+rather than by deductive science.&nbsp;&nbsp; Thus it is known experimentally 
+that the most important hydrogen bonds involve oxygen, then nitrogen, then other 
+atoms and ions such as sulfur and chloride; that the bonds are more-or-less 
+linear; and that they depend on the local net charge in the region of the bond.&nbsp; 
+Thus a hydrogen bond between two acetic acid molecules would be weaker than 
+between an acetic acid molecule and an acetate ion. The extra energy of a 
+charged hydrogen bond is reflected in a reduced distance between the two 
+non-hydrogen atoms in a hydrogen bond.</p>
+<p>Several approaches have been proposed for modeling the hydrogen bond, with 
+the best being the -DH2, -NH+, and -D3H4, with -D3H4 being the most accurate.&nbsp;&nbsp; 
+The approach used in PM7 can best be described as a mixture of -DH2 and -DH+ 
+with a special correction for charged hydrogen bonds.&nbsp; The resulting 
+approximation is by no means optimal, but does capture most of the phenomena 
+associated with hydrogen bonds.&nbsp; Because it is not optimal, it should not 
+be regarded as definitive, in other words, when a better approximation is 
+developed, the current approximation in PM7 should be replaced.&nbsp; Why was 
+-D3H4 not used?&nbsp; Simply put, after implementing the earlier approximations, 
+I ran out of enthusiasm to implement the final, best, approximation.</p>
+<h3>Discussion</h3>
+<p>Approximations for modeling both dispersion and hydrogen bonding terms have 
+been evolving rapidly.&nbsp; At the present time, 2013, a clear description of 
+this topic appears to be appearing:&nbsp; Terms of the type developed by Grimme, 
+i.e., the D3 terms, represent the dispersion effect with very good accuracy, and 
+should be used, without modification, in the development of all future methods.&nbsp; 
+This had several advantages, among these are: (A) Because the dispersion effect 
+is completely separate from all other effects, it can be treated separately. (B) 
+By not using any parameters for the dispersion effect, the number of parameters 
+in a new method is reduced - always a desirable objective. (C) By using a "black 
+box" to represent dispersion effects, the potential of introducing 
+distance-dependent artifacts into a new method is reduced.&nbsp; Unfortunately, 
+at the time PM7 was completed, this insight had not been developed.</p>
+<p>The status of hydrogen bonding approximations is less clear.&nbsp; When 
+PM6-DH2 was developed, a small theoretical error was introduced: the hydrogen bond energy was made a function of the partial charge on 
+the hydrogen atom.&nbsp; This weakened the electronic variational principle, 
+because now the energy minimum depended on the post-SCF hydrogen bond partial 
+charge.&nbsp; A consequence of this violation was that the energy gradient norm 
+no longer went to zero at the energy minimum, and as a result geometry 
+optimization became ill-defined.&nbsp; The error was small, and for most systems 
+could be neglected.&nbsp; The most important practical effect was that geometry 
+optimization became less efficient and as a result took more cycles, i.e., more 
+CPU time.&nbsp; </p>
+<p>The error in PM6-DH2 was corrected in PM6-DH+, by making the hydrogen bond 
+energy independent of partial charge.&nbsp; But now a new error was introduced in 
+PM6-DH+ where for some highly specific systems there was a discontinuity in the 
+second derivative of the energy with respect to geometry.&nbsp;&nbsp;&nbsp; </p>
+<p>In PM7, both of the errors in PM6-DH2 and PM6-DH+ were removed, and the 
+behavior of the hydrogen bond improved.&nbsp; In recent months, various faults 
+in the shape of the hydrogen bond have been described.</p>
+<p>These problems with the hydrogen bond illustrate the fact that approximations 
+for the hydrogen bond are still evolving.&nbsp; The problem to be addressed is 
+clear, it is only the approximation that describes the hydrogen bond that is not 
+clear. of organic compounds.</p>
+<p>&nbsp;</p>
+</body></html>

@@ -1,0 +1,138 @@
+<html><head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTDKH6F');</script>
+<!-- End Google Tag Manager -->
+
+
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/><title>Objective of Methods in MOPAC</title>
+<style type="text/css">
+.auto-style1 {
+	font-family: Symbol;
+}
+</style>
+</head>
+<body link="#0000ff" vlink="#0000ff">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDKH6F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+&nbsp; (<a href="Discussion_topics.html">back to discussion topics</a>)<h1 align="center" dir="rtl">
+Objective of Methods in MOPAC</h1>
+<p>Over the years, the purpose of the methods in MOPAC has steadily changed.&nbsp; 
+In the 1980's, their purpose was to reproduce the properties of molecules.&nbsp; 
+At that time, the most important properties were heat of formation, geometry, 
+dipole moment and ionization potential.&nbsp; The relative importance of each 
+property was defined (and still is) defined using weighting factors.&nbsp; As 
+time went by it became more and more apparent that accurate reproduction of all 
+four properties was simply not possible.&nbsp; Whether this failure was due to 
+errors in the set of approximations used, faulty or inadequate reference data, 
+incomplete parameter optimization or insufficient skill of the method 
+developers, was not important, the fact remained that simultaneous accurate 
+prediction of all four properties was not achieved.&nbsp; At the same time, the 
+importance of predicting the the purely chemical quantities<span class="auto-style1"> 
+D</span>H<sub>f</sub> and geometry increased, and the importance of predicting 
+the electronic quantities dipole moment and ionization potential decreased.&nbsp; 
+As a result of the changing priorities, the purpose of the more recent methods in MOPAC 
+has changed.</p>
+<p>As the importance of accurate prediction of chemical properties increased, 
+the definition of reference data has had to be re-visited.&nbsp; The first of the 
+NDDO methods, MNDO (published in 1977) was a great improvement over even earlier 
+methods, but it was so inaccurate that comparison of MNDO results with 
+experimental reference data and with high-level computed reference data gave 
+essentially the same results.&nbsp; This should not be construed as disparaging 
+MNDO - it was much faster than ab-initio methods, and was really the first of 
+the modern semiempirical methods.&nbsp; Several other methods were developed 
+over the years, and as the accuracy improved the difference between experimental 
+reference data and reference data obtained from high-level calculations became 
+more and more important. Where experiment and high-level theory agreed, there 
+was no problem - obviously either would do as the source of reference data.&nbsp; 
+Where they disagreed, a decision had to be made regarding which data to use.&nbsp; 
+If an experimental datum was reliable - and often this was hard to determine - 
+then that was used, otherwise the theoretical prediction was used.&nbsp; </p>
+<h3>Current methods&nbsp;&nbsp;</h3>
+<p>The two recent methods, PM6 (and its variants, PM6-DH2, PM6-DH+, and PM6-D3) and PM7 
+were designed to allow chemical systems to be modeled.&nbsp; This means that 
+increased emphasis has been given to geometries and heats of formation, at the 
+expense of dipole moments and I.P.s.&nbsp; Because non-covalent interactions are 
+important in proteins and other complicated systems, e.g., crystals of organic 
+compounds, increased emphasis has been given to long-range effects, specifically 
+hydrogen bonds and dispersion effects.&nbsp; Electrostatics are a special case, 
+in that these, although very important, are easy to calculate, even in solids.</p>
+<p>A consequence of this increased emphasis on chemical properties and weak 
+interactions is that properties such as salt bridges,&nbsp;
+<span class="auto-style1">p</span> - <span class="auto-style1">p</span> 
+interactions, <span class="auto-style1">p</span>-stacking, VDW interactions, 
+etc., are now predicted with good accuracy.&nbsp;&nbsp; Because of this, PM7 now 
+predicts many protein properties with good accuracy.</p>
+<p>Despite the increased accuracy, there are several known small but important 
+faults in PM7.&nbsp; Two of the most important being the approximations for 
+dispersion and for hydrogen bonding.&nbsp; These can amount to 0.2 kcal/mol or 
+more.&nbsp; In biochemistry and other branches of organic chemistry, errors in 
+non-covalent interactions are considerably more important than the equivalent 
+errors in covalent interactions.&nbsp; This is because these interactions, 
+although much weaker than covalent interactions, have a greater influence the 
+properties of the system.&nbsp; These faults could be removed, but, if that were 
+done, it is likely that other faults would appear elsewhere.&nbsp; </p>
+<h3>Changes to methods after they are released</h3>
+<p>&nbsp;First and most important: MOPAC is a computational chemistry tool. Its 
+purpose is to allow researchers and students to model chemical phenomena. A 
+pre-requisite for this is that each new version of MOPAC, whether it be a big 
+version change, e.g. MOPAC2012 going to MOPAC2016, or a small change, version 
+13.284 going to version 13.306, should give exactly the same results for the 
+same data-set. This requirement for perfect continuity means that a job that had 
+been run 10, 20, or even 30 years ago should have the same results as the 
+equivalent job run today. Many research programs take years to complete, so 
+there is a strong reason to ensure reproducibility. Put another way, MOPAC is 
+not intended to be a show-case for semiempirical methods. If it was, then only 
+the latest and most accurate methods would be supported, and as improvements are 
+made in methodology, those improvements would be immediately incorporated into 
+the program. As such, each new version would be the most accurate, but the 
+program would then be essentially useless as a research tool, because users 
+could not trust that results obtained on one day could be related to results 
+obtained on a different day.<br/><br/>There are two exceptions to the rule that 
+methods in MOPAC are not changed.<br/><br/>(a) As each new method is released, the 
+default method changes to the new method. This could potentially cause 
+unpleasant surprises as results obtained with the previous default method would 
+change when a new default method is used. To minimize the potential for 
+surprises of this type, when a new method is first released there is no default 
+method. Jobs will fail unless a method is explicitly specified. Thus before PM7 
+became available the default method was PM6. When PM7 became available, MOPAC 
+jobs required the method (PM6 or PM7) to be specified as a keyword. After a 
+while a default method is re-introduced, so, in the case of PM7, the need to 
+explicitly specify the keyword PM7 was dropped after several months.<br/><br/>(b) 
+If, after a new method is released, a fault is found that could be corrected by 
+a simple change, then that change might be made. The decision of whether or not 
+to make the change depends on two competing factors: (1) is the change 
+sufficiently important to justify modifying a method, and (2) how much harm 
+would result from the change potentially compromising the integrity of research 
+projects already underway. With over 18,000 licensed sites world-wide, the 
+potential for causing disruption to research projects is obvious. Because of 
+this, only important changes are made to methods, and then only in the first few 
+months after a method is released. That is, at a time when a user's investment 
+in effort is still small and it would still be easy for users to re-run jobs. 
+The procedure for making such a change is similar to that for introducing a new 
+method, i.e., a keyword to alert the user to the change is required and then, 
+after a few months, the changed method becomes the default.<br/><br/>At the time 
+when a new method is being designed, all the notes on faults in the existing 
+current method and on suggestions for improvement are reviewed, and, where 
+appropriate, incorporated into the design of the new method. After a method has been available for many months, and a fault is discovered 
+in that method or a change is made that results in a significant improvement in 
+accuracy, no action is taken to modify the method to eliminate the fault or to 
+implement the improvement.&nbsp; To do so would cause more harm to the large 
+number of users whose projects would be affected by the change.&nbsp; Instead, a 
+note is made of the issue.&nbsp; For an example of such notes, see
+<a href="../Manual/PM6_accuracy.html">PM6 Accuracy</a> and
+<a href="../PM7_and_PM6-D3H4_accuracy/Faults_specific_to_PM7.html">PM7 Faults</a>. Later on, 
+when a new 
+method is being designed, all the notes on faults in the existing current method 
+and on suggestions for improvement are reviewed, and where appropriate, 
+incorporated into the design of the new method.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+</body></html>
