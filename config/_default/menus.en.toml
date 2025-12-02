@@ -27,7 +27,7 @@
 
 [[main]]
   name = "Manual"
-  url = "https://openmopac.github.io/Manual"
+  url = "/Manual"
   weight = 40
 
 [[main]]
