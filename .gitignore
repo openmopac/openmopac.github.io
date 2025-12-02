@@ -1,2 +1,9 @@
 # Mac stuff
 .DS_Store
+
+# Hugo stuff
+/.hugo_build.lock
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
