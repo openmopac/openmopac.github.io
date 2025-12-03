@@ -6,6 +6,6 @@ The MOPAC website at the openmopac.net domain also hosts supplementary material 
 
 - [http://openmopac.net/Chymo.html](http://openmopac.net/Chymo.html) for [An investigation into the applicability of the semiempirical method PM7 for modeling the catalytic mechanism in the enzyme chymotrypsin](https://doi.org/10.1007/s00894-017-3326-8)
 - [http://openmopac.net/PM6-ORG](http://openmopac.net/PM6-ORG) for [A semiempirical method optimized for modeling proteins](https://doi.org/10.1007/s00894-023-05695-1)
-- [http://openmopac.net/Supporting_information.html](http://openmopac.net/Supporting_information.html) for [Prediction of enzyme inhibition (IC50) using a combination of protein–ligand docking and semiempirical quantum mechanics](https://doi.org/10.1007/s00894-025-06423-7)
+- [http://openmopac.net/Supporting_information.HTML](http://openmopac.net/Supporting_information.HTML) for [Prediction of enzyme inhibition (IC50) using a combination of protein–ligand docking and semiempirical quantum mechanics](https://doi.org/10.1007/s00894-025-06423-7)
 
 During development, this website will be hosted at [https://openmopac.github.io](https://openmopac.github.io). After its initial deployment, the hosting will be switched to the openmopac.net domain, which will retire the old MOPAC website.
