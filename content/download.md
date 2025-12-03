@@ -3,18 +3,18 @@ title: "Download"
 description: "Download and installation instructions for MOPAC"
 ---
 
-The most recent versions of MOPAC are distributed under the Apache 2.0 license.
+The most recent versions of MOPAC are distributed under the open-source [Apache 2.0 license](https://github.com/openmopac/mopac/blob/main/LICENSE).
 The recommended citation to MOPAC is presently a software citation to its [Zenodo DOI](https://doi.org/10.5281/zenodo.6511958),
 but there will soon be an open-source MOPAC release paper in the Journal of Open-Source Software to replace this.
 MOPAC can be obtained through a variety of distribution channels, as discussed below.
 The development version of MOPAC is available from its GitHub [repository](https://github.com/openmopac/mopac),
-which also includes all official [releases](https://github.com/openmopac/mopac/releases).
+which also includes all of its official [releases](https://github.com/openmopac/mopac/releases).
 
 ## Stand-alone installer
 
 The primary distribution channel for MOPAC over the last few decades has been through a stand-alone installer.
 The installer for the latest version of MOPAC is available as a [GitHub release](https://github.com/openmopac/mopac/releases/latest).
-The commercial version of MOPAC required a password to activate, but this is no longer necessary for the open-source version.
+This open-source version of MOPAC does not require a password to activate, unlike the previous commercial versions of MOPAC.
 
 This distribution is available for three operating systems---Linux, MacOS, and Windows---and as a graphical installer (`.run`, `.dmg`, or `.exe`)
 or a compressed archive (`.tar.gz` or `.zip`). The installer will add the MOPAC executable to your system path, which you'll have to do manually
