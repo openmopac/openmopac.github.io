@@ -38,9 +38,9 @@ The two long-term goals of MOPAC website development are to update old informati
 the Hugo-based website. Contributions to these goals are welcome.
 
 The non-Hugo web content is located in the
-`static folder<https://github.com/openmopac/openmopac.github.io/tree/main/static>`_,
-a separate `manual repository<https://github.com/openmopac/Manual>`_,
-and a separate `reference data repository<https://github.com/openmopac/PM7_and_PM6-D3H4_accuracy>`_.
+`static folder <https://github.com/openmopac/openmopac.github.io/tree/main/static>`_,
+a separate `manual repository <https://github.com/openmopac/Manual>`_,
+and a separate `reference data repository <https://github.com/openmopac/PM7_and_PM6-D3H4_accuracy>`_.
 
 Developer Certificate of Origin
 ===============================
