@@ -4,6 +4,7 @@
 
 # baseURL = "https://your_domain.com/"
 defaultContentLanguage = "en"
+disablePathToLower = true
 
 enableRobotsTXT = true
 summaryLength = 0
