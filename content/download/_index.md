@@ -3,7 +3,9 @@ title: "Download"
 description: "Download and installation instructions for MOPAC"
 ---
 
-The latest version of MOPAC is 23.2.2, which can be downloaded as either a graphical installer or a compressed archive for Linux, Mac, or Windows.
+The latest version of MOPAC can be downloaded as either a graphical installer or a compressed archive for Linux, Mac, or Windows.
+
+**latest version:** 23.2.2 (October 28, 2025)
 
 | Linux | Mac | Windows |
 |:-:|:-:|:-:|
