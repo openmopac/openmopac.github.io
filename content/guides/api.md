@@ -9,7 +9,7 @@ weight: 7
 While MOPAC is usually used as a command-line executable with file-based input and output, this isn't always convenient or performant.
 In particular, the parallelism of MOPAC is limited to the multithreading of BLAS and LAPACK operations in conventional MOPAC calculations,
 and MOZYME calculations are purely serial. However, the memory usage of MOPAC is usually low, and MOPAC can make use of parallel computing
-by running many independent calculations simultaneously. In some computing environments, this trivial parallelism may be limited by disk
+by running many independent calculations simultaneously. In some computing environments, the throughput of this trivial parallelism may be limited by disk
 access because each MOPAC calculation writes multiple output files to disk.
 
 The main purpose of the MOPAC API is to provide access to basic MOPAC functionality with no use of disk and all input and ouput
@@ -22,8 +22,8 @@ For basic examples of C and Fortran API usage, see the [MOPAC GitHub repository]
 
 ## Python
 
-The easiest way to use the MOPAC API is through Python. Two Python packages with API wrappers are available: [Mopactools](/mopactools/)
-and [Pymopac](https://pymopac.readthedocs.io). Both of these packages are available on PyPI and Mopactools is also available on the conda-forge channel of Conda.
+The easiest way to use the MOPAC API is through Python. Two Python packages with API wrappers are available: [mopactools](/mopactools/)
+and [pymopac](https://pymopac.readthedocs.io). Both of these packages are available on PyPI and mopactools is also available on the conda-forge channel of Conda.
 See their documentation for further details of use.
 
 ## C
@@ -33,7 +33,7 @@ The C-bound MOPAC API is fully described by its [C header file](https://github.c
 The `run_mopac_from_input` function initiates a standard disk-based MOPAC calculation using the input file specified by the string argument of the function.
 The `get_mopac_version` function writes the MOPAC version string to the string argument of the function.
 
-The main API calls have the syntax `solver_calc`. `solver` is `mopac` for conventional MOPAC calculations and `mozyme` for fast MOZYME calculations.
+The main API calls have the naming convention `solver_calc`. `solver` is `mopac` for conventional MOPAC calculations and `mozyme` for fast MOZYME calculations.
 `calc` is `scf` for standard self-consistent field (SCF) calculations at a fixed geometry, `relax` for geometry relaxation to a local minimum of heat,
 and `vibe` is a vibrational calculation from a relaxed geometry.
 
@@ -42,13 +42,13 @@ data structure describing the geometry of an atomistic system and specifying the
 `mopac_state` or `mozyme_state`, is solver dependent and describes the electronic ground state. The `solver_state` structure is used as input to
 specify the initial electronic ground state of the SCF cycle, and it is also used as output to record the final electronic ground state of the calculation.
 The `solver_state` input can be assigned a trivial value, `mopac_state.mpack = 0` or `mozyme_state.numat = 0`, to use MOPAC's default initialization
-of the electronic ground state. The third argument is `mopac_properties`, which is an output data structure containing the main physical properties
+of the electronic ground state for the SCF cycle. The third argument is `mopac_properties`, which is an output data structure containing the main physical properties
 calculated by MOPAC.
 
-MOPAC internally allocates the memory for the `solver_state` and `mopac_properties` structures, there are API calls to deallocate this memory in a consistent manner.
+MOPAC internally allocates the memory for the `solver_state` and `mopac_properties` structures, and there are API calls to deallocate this memory in a consistent manner.
 For custom initializations of `solver_state`, the memory within the data structure must be allocated by their corresponding API calls for memory allocation
 because API calls must be able to deallocate this memory when updating `solver_state` for output.
-The arrays in `solver_state` are allocated memory according to the sizes specified in their corresponding size variables.
+These API calls allocate memory to the arrays in `solver_state` according to the sizes specified in their corresponding size variables on input.
 
 ## Fortran
 

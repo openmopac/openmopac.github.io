@@ -29,7 +29,7 @@ These recognized input file extensions are `.mop`, `.dat`, and `.arc`, without c
 For example, the input files `molecule` and `molecule.mop` will both produce an output file named `molecule.out`.
 
 An input file with the extension `.arc` is assumed to be the archival output file of a previous MOPAC calculation.
-Archival output files have a valid MOPAC input file appended to the end, and MOPAC will ignore the rest of the `.arc` input file and run this appended input file.
+Archival output files have a valid MOPAC input file appended to the end, and MOPAC will ignore the rest of a `.arc` input file and run this appended input file.
 
 ## Input file format
 
@@ -45,7 +45,7 @@ second atomic coordinate
 last atomic coordinate
 ```
 The keyword line is a list of keywords separated by whitespace, the two comment lines are ignored by MOPAC, and the remaining lines describe the geometry of an atomistic system.
-The most common way to format atomic coordinates is the element symbol followed by the Cartesian coordinates along the x, y, and z axis in units of Angstroms.
+The most common way to format atomic coordinates is the element symbol followed by the Cartesian coordinates in the x, y, and z directions in units of Angstroms.
 For example, the MOPAC input file for a calculation of methane is:
 ```
 1SCF GRADIENTS CHARGE=0
@@ -69,10 +69,10 @@ Consult the manual for more information on input file formats.
 
 MOPAC does not require any keywords to function. Its default behavior without keywords is to perform a geometry relaxation using the PM7 model.
 This will make a sequence of adjustments to the geometry of the input system to find the local minimum of its heat of formation.
-The heat of formation calculated by MOPAC is relative to a decomposition into isolated elements in thermodynamic equilibrium at 25°C.
+The heat of formation calculated by MOPAC is relative to a decomposition into isolated elements that are each in thermodynamic equilibrium at 25°C.
 By default, MOPAC assumes that a system is in vacuum and has a neutral charge and minimum total spin.
 Keywords can then be used to adjust (1) the atomistic system, (2) the type of calculation, and (3) the amount of output.
-The most commonly used keywords are listed below. Consult the online MOPAC manual for a more complete description of each keyword and a complete list of keywords.
+The most commonly used keywords are listed below. Consult the online MOPAC manual for a complete list of keywords and a more complete description of each keyword.
 
 ### 1SCF
 
@@ -89,11 +89,13 @@ The use of both `1SCF` and `GRADIENTS` enables the calculation of atomic forces 
 
 This keyword specifies the total electric charge of a system in elemenentary units of charge.
 For example, `CHARGE=1` removes an electron from a system and `CHARGE=-1` adds an electron to a system.
+The total charge is zero by default.
 
 ### MS
 
 This keyword specifies the total electronic spin of a system in elementary units of spin.
 For example, `MS=0` is a singlet, `MS=0.5` is a doublet, and `MS=1` is a triplet.
+The default value of total spin is zero for even-electron systems and a half for odd-electron systems.
 
 ### UHF
 
@@ -116,7 +118,7 @@ A commonly used value is `EPS=78.4`, which is the dielectric constant of water a
 
 ### PULAY
 
-This keyword causes MOPAC to use Pulay's direct inversion in the iterative subspace (DIIS) algorithm in the SCF cycle.
+This keyword causes MOPAC to use Pulay's [direct inversion in the iterative subspace (DIIS)](https://en.wikipedia.org/wiki/DIIS) algorithm for the SCF cycle.
 MOPAC's default SCF mixing algorithm is often the fastest for simple systems, but DIIS is usually more robust.
 DIIS can sometimes converge when the default algorithm fails, and it can be faster when the default algorithm causes slow convergence.
 
@@ -127,14 +129,16 @@ If a MOPAC calculation appears to be frozen, then this keyword can be used to ch
 For chemically well-posed systems that are expected to have a closed electronic shell, poor convergence of the SCF cycle may indicate an unphysical geometry, charge, or spin.
 
 When `PL` indicates an SCF convergence problem, the most likely simple solution is to add the `PULAY` keyword.
-If `PULAY` does not help, then consult the manual for more SCF options including use of the `OLDENS` keyword to specific a custom input density matrix.
+If `PULAY` does not help, then consult the manual for more SCF options including use of the `OLDENS` keyword
+to specify a custom input density matrix at the start of the SCF cycle.
 
 ### DISP
 
 This keyword causes MOPAC to print a more detailed decomposition of the heat of formation in the output file.
-This includes a list of hydrogen bonds, a "total energy", an "electronic energy", and a "core-core repulsion".
+This includes a list of hydrogen bonds, a "total energy", an "electronic energy", and a "core-core repulsion energy".
 Note that this energy decomposition comes from an artificial partitioning of the semiempirical model into components.
 These energy components do not have a direct physical meaning, although they may have some correlation with physical properties.
+Please use caution when interpreting these values.
 
 ### AUX
 
@@ -146,7 +150,7 @@ The `.aux` file was designed to be more machine readable than the main `.out` ou
  END OF MOPAC PROGRAM
 ```
 MOPAC input files can be concatenated, and MOPAC will perform the corresponding calculations in sequence.
-Multiple calculations can use the `AUX` keyword, and each calculation will be reported in the `.aux` file with the delimiter:
+Multiple calculations can use the `AUX` keyword, and each calculation will be reported in the `.aux` file within the delimiter:
 ```
  START OF MOPAC FILE
 ...
@@ -168,7 +172,7 @@ and can be modified by arguments of the `AUX` keyword.
 
 ### FORCE
 
-This keyword causes MOPAC to calculate vibrational modes and frequencies using isotropically averaged atomic masses.
+This keyword causes MOPAC to calculate vibrational modes and frequencies using isotopically averaged atomic masses.
 
 ### POLAR
 

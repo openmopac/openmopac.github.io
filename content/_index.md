@@ -1,4 +1,4 @@
-![MOPAC logo](img/logo.png)
+![MOPAC logo](images/logo.png)
 
 # **M**olecular **O**rbital **PAC**kage
 

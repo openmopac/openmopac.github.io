@@ -9,17 +9,20 @@ weight: 5
 MOPAC contains several features designed specifically for proteins.
 As suggested by its name, the MOZYME solver was designed to study proton transfer reactions in enzymes.
 An atomistic study of proteins such as enzymes needs to start with atomistic structure, which can be large and complicated.
-A popular source of protein structure data is the Protein Data Bank (PDB), and MOPAC has tools for processing data from this source and preparing it for MOZYME calculations.
+A popular source of protein structure data is the [Protein Data Bank (PDB)](https://www.rcsb.org),
+and MOPAC has tools for processing data from this source and preparing it for MOZYME calculations.
 These tools are associated with specific MOPAC keywords, and the simplest of these tools/keywords are summarized below.
-See the online MOPAC manual for more detailed information on advanced protein functionality such as transition state searches for enzymatic reactions.
+See the online MOPAC manual for more detailed information on advanced protein functionality such as transition state searches for enzymatic reactions
+and some worked examples.
 
 ## GEO_DAT
 
 MOPAC can read protein structures that are stored in the PDB file format, usually with a `.pdb` file extension.
-Specifically, a PDB file `protein.pdb` file can be read by using the `GEO_DAT="protein.pdb"` keyword instead of inputting the protein structure directly into the MOPAC input file.
+Specifically, a PDB file `protein.pdb` file can be read by using the `GEO_DAT="protein.pdb"` keyword instead of inputting the protein structure directly into a MOPAC input file.
 In addition to the structure data, MOPAC retains the atom labels from the PDB file.
 
-In recent years, the PDB has switched from the PDB file format to the mmCIF file format with a `.mmcif` file extension, but MOPAC does not directly support the mmCIF file format.
+In recent years, the PDB has switched from the PDB file format to the mmCIF file format with a `.mmcif` file extension,
+but MOPAC presently does not directly support the mmCIF file format.
 
 ## PDBOUT
 
@@ -28,7 +31,8 @@ is appended to the name of the input file. Take care not to overwrite existing `
 
 ## RAMA
 
-This keyword causes MOPAC to print the Ramachandra angles (phi, psi, and omega) for the residues of a protein in the `.out` output file.
+This keyword causes MOPAC to print the [Ramachandra angles](https://en.wikipedia.org/wiki/Ramachandran_plot) (phi, psi, and omega)
+for the residues of a protein in the `.out` output file.
 
 ## RESIDUES
 
@@ -37,7 +41,7 @@ a letter for the polypeptide chain, and a number for the position in the polypep
 
 ## RESEQ
 
-This keyword causes MOPAC to reorder the atoms in a protein into a standard PDB sequence.
+This keyword causes MOPAC to reorder the atoms in a protein into a standard PDB file sequence.
 
 ## ADD-H
 
@@ -49,3 +53,4 @@ There is some unavoidable ambiguity in the assignment of hydrogen atoms, and the
 
 This keyword can be used to adjust the behavior of the `ADD-H` keyword. The simplest use of this keyword is `SITE=(SALT)`, which forces all terminal nitrogen atoms
 within 4 Angstroms of a caboxylic acid group to become a salt bridge. This causes the hydrogen and charge assigment of (NH3)+ and (COO)- instead of (NH2) and (COOH).
+See the online MOPAC manual for a complete explanation of this keyword.

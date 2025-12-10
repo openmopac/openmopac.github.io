@@ -27,9 +27,10 @@ starting from the root directory of the MOPAC repository. MOPAC should build wit
 if CMake successfully detects a Fortran compiler and BLAS/LAPACK libraries. Otherwise, the `cmake ..` command
 may require additional command-line options to specify a Fortran compiler (`-DCMAKE_Fortran_COMPILER=...`)   
 or the path (`-DMOPAC_LINK_PATH=...`) and linker options (`-DMOPAC_LINK=...`) to link BLAS and LAPACK libraries to the MOPAC executable.
-
-The CTest-based testing requires an installation of Python 3.x and Numpy that can be detected by CMake.
+The CTest-based testing also requires an installation of Python 3.x and Numpy that can be detected by CMake.
 
 To build MOPAC with [MolSSI Driver Interface (MDI)](https://molssi-mdi.github.io/MDI_Library/) support enabled, use the CMake command-line option `-DMDI=ON`.
 
-
+After a successful CMake build, the MOPAC executable and shared libraries will be in the out-of-source build directory (e.g. `/build`).
+The executable can then be tested with the shell command `ctest` unless testing has been disable.
+Finally, MOPAC can be installed with the shell command `make install`.

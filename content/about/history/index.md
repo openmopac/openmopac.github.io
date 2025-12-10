@@ -47,14 +47,14 @@ in 1992, which included d orbitals. MNDO/d was then incorporated into MOPAC in t
 
 ## Austin era
 
-The development of MOPAC began in 1981 after [James "Jimmy" Stewart](stewart_bio/) joined the Dewar group as a visiting scholar.
+The development of MOPAC began in 1981 after [James "Jimmy" Stewart](../stewart_bio) joined the Dewar group as a visiting scholar.
 Stewart was a professor at the University of Strathclyde in Scotland with a lot of prior software development experience in quantum chemistry.
 He was tasked by Dewar to refactor the research software that his group had produced during the development of the MINDO/3 and MNDO models into
 a unified, user-friendly computer program. The first release of MOPAC was in 1983 as software available by mail order from the [Quantum Chemistry Program 
 Exchange](https://en.wikipedia.org/wiki/Quantum_Chemistry_Program_Exchange) (QCPE). After GAUSSIAN became commercial software and was removed
 from the QCPE catalog, MOPAC became the most popular software on the QCPE.
 
-![James Stewart](jstewart.jpg "James Stewart")
+![James Stewart](/images/jstewart.jpg "James Stewart")
 
 The Dewar group also simultaneously developed the Austin Model 1 (AM1) semiempirical model alongside MOPAC, which included the development of 
 new model parameterization software. Stewart also contributed to the development of AM1 and its parameterization software, which he would eventually release as the PARAM
@@ -92,7 +92,7 @@ the Dewar group founded the company [Semichem Inc.](http://www.semichem.com) in 
 As part of a broader investment in atomistic simulation software, Fujitsu hired Stewart as a consultant and acquired the distribution rights to future versions of MOPAC.
 The first Fujitsu commercial release of MOPAC was MOPAC 93 in 1993. Fujitsu later acquired the CAChe software from Oxford Molecular Group in 2000 around the time of that
 company's bankruptcy and liquidation, and MOPAC and CAChe formed the foundation for Fujitsu's SCIGRESS software. MOPAC was adapted into the MO-G simulation engine of
-SCIGRESS and its development continued at FQS Poland subsidiary of Fujitsu. Some Fujitsu-exclusive semiempirical quantum chemistry features include the PM5 model and the
+SCIGRESS, and its development continued at FQS Poland subsidiary of Fujitsu. Some Fujitsu-exclusive semiempirical quantum chemistry features include the PM5 model and the
 [LocalSCF](https://doi.org/10.1063/1.1764496) fast solver algorithm, which is technically distinct from MOPAC's 
 [MOZYME](https://doi.org/10.1002/(SICI)1097-461X(1996)58:2%3C133::AID-QUA2%3E3.0.CO;2-Z) fast solver algorithm.
 
@@ -101,9 +101,9 @@ SCIGRESS and its development continued at FQS Poland subsidiary of Fujitsu. Some
 Stewart stopped working for Fujitsu in 2004 and distributed subsequent versions of MOPAC through Stewart Computational Chemistry
 in partnership with third-party commercial resellers.
 Versions of MOPAC from this era were free for academic use, but it required a commercial license for government and industrial use. MOPAC's model coverage of the periodic table was
-greatly expanded to include the first 83 elements of the periodic table (with the lanthanides being modeled only in the +3 valence as classical "sparkles") in the
-[PM6](https://doi.org/10.1007/s00894-007-0233-4) and [PM7](https://doi.org/10.1007/s00894-012-1667-x) models. MOPAC's support for biomolecular simulation, particularly of protein 
-structures from the [Protein Data Bank](https://www.rcsb.org) (PDB), was also improved.
+greatly expanded to include the first 83 elements of the periodic table in the [PM6](https://doi.org/10.1007/s00894-007-0233-4) and [PM7](https://doi.org/10.1007/s00894-012-1667-x) 
+models (with the lanthanides being modeled only in the +3 valence as classical "sparkles"). MOPAC's support for biomolecular simulation was also improved, particularly of protein 
+structures from the [Protein Data Bank](https://www.rcsb.org) (PDB).
 
 ![NIH](nih.png)
 
@@ -118,7 +118,7 @@ For a summary of Stewart-authored publications related to MOPAC development afte
 ![MolSSI](molssi.png)
 
 In 2019, Stewart began a partnership with the Molecular Science Software Institute (MolSSI) to migrate MOPAC into an open-source software project.
-On the technical side, this process involved improving the portability of MOPAC's code base, reorganizing its to be easier to understand and contribute to,
+On the technical side, this process involved improving the portability of MOPAC's code base, reorganizing it to be easier to understand and contribute to,
 adapting its building, testing, and distribution to the modern open-source ecosystem, fixing some performance issues, and adding new interfaces to improve accessibility.
 On the social side, this involved contacting and coordinating with various stakeholders and collecting essential institutional knowledge.
 This process concluded in 2022 with a legal transfer of MOPAC's intellectual property to Virginia Tech and its first open-source release.

@@ -2,10 +2,12 @@
 draft: false
 title: 'James "Jimmy" J. P. Stewart'
 description: "Biography of James Stewart"
-weight: 1
+weight: 10
+_build:
+  list: never
 ---
 
-![James Stewart](../jstewart.jpg)
+![James Stewart](/images/jstewart.jpg)
 
 [PLACEHOLDER]
 

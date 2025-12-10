@@ -6,21 +6,21 @@ summary: "how to install MOPAC using the stand-alone installers"
 weight: 1
 ---
 
-The primary distribution channel for MOPAC over the last few decades has been through a stand-alone installer.
-The installer for the latest version of MOPAC is available as a [GitHub release](https://github.com/openmopac/mopac/releases/latest).
-This open-source version of MOPAC does not require a password to activate, unlike the previous commercial versions of MOPAC.
+The graphical installer (`.run`, `.dmg`, or `.exe`) is created using the [Qt Installer Framework](https://doc.qt.io/qtinstallerframework/).
+It prompts the user for an installation directory and adds the MOPAC executable to the system path.
 
-This distribution is available for three operating systems---Linux, MacOS, and Windows---and as a graphical installer (`.run`, `.dmg`, or `.exe`)
-or a compressed archive (`.tar.gz` or `.zip`). The installer will add the MOPAC executable to your system path, which you'll have to do manually
-if you use the archive.
+The compressed archive (`.tar.gz` or `.zip`) contains the MOPAC executable in the `/bin` directory, which depends on shared libraries
+contained in the `/lib` directory on Linux/Mac or the `/bin` directory on Windows.
+If you want the MOPAC executable to be in your path, then you have to add it yourself using environment or registry variables.
 
-Installation should be straightforward with a few OS-specific caveats.
+The open-source version of MOPAC does not require a password to activate, unlike the previous commercial versions of MOPAC.
+
+MOPAC installation should be straightforward with a few OS-specific caveats.
 
 ## Linux
 
-The graphical installer is created using the [Qt Installer Framework](https://doc.qt.io/qtinstallerframework/),
-which may not be compatible with all Linux distributions. While it is primary meant to be used on a graphical desktop, the installer can also be run
-from a Linux command prompt using the syntax:
+The Qt Installer Framework may not be compatible with all Linux distributions. While it is primarily meant to be used on a graphical desktop,
+the installer can also be run from a Linux command prompt using the syntax:
 ```
 ./mopac-x.y.z-linux.run install --accept-licenses --confirm-command --root type_installation_directory_here
 ```
@@ -39,7 +39,8 @@ MacOS Gatekeeper might not let you run the installer or MOPAC executable directl
 select "open", and then acknowledge that you trust the executable in the window that pops up.
 
 Like Linux, MacOS can have `libiomp5` compatibility problems if an old library version is in the shared library path (`DYLD_LIBRARY_PATH`).
-However, this problem can be fixed on MacOS by moving the offending directories to the failsafe shared library path, `DYLD_FALLBACK_LIBRARY_PATH`.
+However, this problem can be fixed on MacOS by moving the offending directories to the failsafe shared library path, `DYLD_FALLBACK_LIBRARY_PATH`,
+which has a lower priority than the RPATH.
 
 The MacOS version of MOPAC is presently built for x86 processors and should run on ARM processors (M*x*) through the Rosetta emulation layer.
 Once x86 MacOS builds are no longer possible, MOPAC will switch to native ARM builds and no longer support x86 on Macs.

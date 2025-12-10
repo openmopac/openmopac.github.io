@@ -15,17 +15,18 @@ For a detailed description of the MOZYME solver, see its [implementation paper](
 
 The MOZYME solver is activated by adding the `MOZYME` keyword to a MOPAC input file. Many of MOPAC's features are compatible with the MOZYME solver
 and require no further changes to the input file. However, MOZYME causes two important changes to a MOPAC calculation. First, a formal Lewis structure
-analysis is performed on the input geometry. Based on covalent bonding and shell-filling rules and inter-atomic distances, all atoms are assign
+analysis is performed on the input geometry. Based on covalent bonding and shell-filling rules and inter-atomic distances, all atoms are assigned
 covalent bonds and a formal charge. Once this analysis is complete, MOZYME will try to set the total charge of the system to achieve a closed-shell
 electronic configuration. If it is unable to achieve a closed shell, MOZYME will end the calculation. Second, the total charge of a MOZYME calculation
 defaults to the total charge determined by the bonding analysis rather than a neutral charge. If a different total charge of `x` is required, then
 the `CHARGE=x` keyword also needs to be added to the input file. The MOZYME bonding analysis will then attempt to achieve a closed shell that is
 compatible with the total charge constraint.
 
-The MOZYME solver needs the bonding analysis to generate a good initial guess for the LMOs. The LMOs are optimized using pseudodiagonalization,
+The MOZYME solver needs the bonding analysis to generate a good initial guess for the LMOs. The LMOs are optimized using a sparse version of
+[pseudodiagonalization](https://doi.org/10.1002/jcc.540030214),
 which usually needs a good initial guess to converge. If you believe that a system has a closed shell but MOZYME fails to detect it, then
 you can use the `LEWIS` keyword to provide more details of the bonding analysis for debugging purposes. See the online MOPAC manual for more
-information about the MOZYME solver and advanced keywords that can further guide and constrain its bonding analysis.
+information about the MOZYME solver and advanced keywords that can further guide and constrain its bonding and charge assignments.
 
 The MOZYME solver is incompatible with vibrational and excited-state calculations, and polarizability calculations must be static rather than
 frequency-dependent. Because the MOZYME solver requires a closed shell, it is limited to restricted Hartree-Fock (RHF) calculations and cannot

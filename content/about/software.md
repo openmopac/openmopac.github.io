@@ -7,7 +7,7 @@ weight: 99
 ---
 
 Given MOPAC's age and popularity, there is a lot of software that works with MOPAC in a variety of ways.
-To get the most out of MOPAC, you should consider the use of one or more of these programs.
+To get the most out of MOPAC, you should consider using one or more of these programs.
 Unless otherwise noted as commercial, the software listed here is free to use for all purposes.
 
 
@@ -32,6 +32,10 @@ A commercial GUI focused on simulations of materials that has support for MOPAC.
 ### [MoCalc2012](https://sourceforge.net/projects/mocalc2012/)
 
 An atomistic simulation GUI built from open-source visualization components JSME, CH5M3D, and Jmol/JSmol with support for MOPAC.
+
+### [Molecular Operating Environment (MOE)](https://www.chemcomp.com/en/Products.htm) (commercial)
+
+A commercial GUI focused on drug discovery that has support for MOPAC.
 
 ### [Signals ChemDraw](https://revvitysignals.com/products/research/chemdraw) (commercial)
 
@@ -69,11 +73,11 @@ For example, a driver can enable molecular dynamics in an engine that doesn't na
 Note that MOPAC executables not distributed with MDI support enabled. To use MOPAC as an MDI engine, you must build it yourself with the CMake command-line option
 `-DMDI=ON`.
 
-### [Mopactools](/mopactools/)
+### [mopactools](/mopactools/)
 
 A Python wrapper for MOPAC, for both command-line usage and its native API.
 
-### [Pymopac](https://pymopac.readthedocs.io)
+### [pymopac](https://pymopac.readthedocs.io)
 
 Another Python wrapper for MOPAC, for both command-line usage and its native API.
 

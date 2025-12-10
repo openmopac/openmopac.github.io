@@ -6,6 +6,8 @@ summary: "how to get support for using MOPAC"
 weight: 4
 ---
 
+Commercial versions of MOPAC are no longer supported, and all MOPAC users are encouraged to switch to the most recent open-source version.
+
 There are three available support channels for MOPAC: the [openmopac@gmail.com](mailto:openmopac@gmail.com) email address and
 the [Issues](https://github.com/openmopac/mopac/issues) and [Discussions](https://github.com/openmopac/mopac/discussions) sections of MOPAC's GitHub repository.
 The email address is for private inquiries, and GitHub is for public inquiries.
