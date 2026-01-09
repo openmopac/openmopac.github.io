@@ -4,7 +4,7 @@ languageDirection = "ltr"
 weight = 1
 
 title = "MOPAC"
-copyright = "&copy; 2025 Virginia Polytechnic Institute and State University"
+copyright = "<a href=https://molssi.org><img src=/images/molssi.png width=100></a> &copy; 2025 [The Molecular Sciences Software Institute](https://molssi.org)"
 
 [params]
   dateFormat = "2 January 2006"
@@ -16,7 +16,7 @@ copyright = "&copy; 2025 Virginia Polytechnic Institute and State University"
   # name = "Your name here"
   # image = "img/author.jpg"
   # headline = "I'm only human"
-  # bio = "A little bit about you"
+  # bio = "MolSSI test ..."
   # links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },

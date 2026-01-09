@@ -13,4 +13,6 @@ The early versions of MOPAC were released into the public domain until it became
 the public domain as an open-source software project in 2022.
 
 The open-source version of MOPAC was developed by the Molecular Sciences Software Institute,
-which is funded by the National Science Foundation through grants ACI-1547580 and CHE-2136142.
+which is funded by the National Science Foundation through grants
+[ACI-1547580](https://nsf.gov/awardsearch/showAward?AWD_ID=1547580) and [CHE-2136142](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2136142).
+

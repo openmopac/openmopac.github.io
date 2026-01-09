@@ -3,7 +3,7 @@ draft: false
 title: 'James "Jimmy" J. P. Stewart'
 description: "Biography of James Stewart"
 weight: 10
-_build:
+build:
   list: never
 ---
 

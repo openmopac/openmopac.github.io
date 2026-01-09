@@ -115,7 +115,7 @@ For a summary of Stewart-authored publications related to MOPAC development afte
 
 ## MolSSI era
 
-![MolSSI](molssi.png)
+![MolSSI](/images/molssi.png)
 
 In 2019, Stewart began a partnership with the Molecular Science Software Institute (MolSSI) to migrate MOPAC into an open-source software project.
 On the technical side, this process involved improving the portability of MOPAC's code base, reorganizing it to be easier to understand and contribute to,
@@ -127,4 +127,5 @@ MolSSI's work with MOPAC has been led by Jonathan Moussa, who has also assumed r
 
 ![NSF](nsf.png)
 
-MolSSI, including its work with MOPAC, has been supported by the National Science Foundation (NSF) through grants ACI-1547580 and CHE-2136142.
+MolSSI, including its work with MOPAC, has been supported by the National Science Foundation (NSF) through grants
+[ACI-1547580](https://nsf.gov/awardsearch/showAward?AWD_ID=1547580) and [CHE-2136142](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2136142).

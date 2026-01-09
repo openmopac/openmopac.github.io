@@ -7,7 +7,7 @@
 
 colorScheme = "congo"
 defaultAppearance = "light" # valid options: light or dark
-autoSwitchAppearance = true
+autoSwitchAppearance = false
 
 defaultThemeColor = "#FFFFFF"
 
@@ -39,7 +39,7 @@ fingerprintAlgorithm = "sha256"
 [article]
   showDate = false
   showDateUpdated = false
-  showAuthor = false
+  showAuthor = true
   showBreadcrumbs = false
   showDraftLabel = true
   showEdit = false
