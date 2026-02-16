@@ -1,3 +1,11 @@
+---
+description: "MOPAC landing page"
+---
+
+{{< alert "cc_flask_logo" >}}
+[Join us in our efforts to create, expand, and maintain projects like MOPAC!](https://computationalcatalyst.org)
+{{< /alert >}}
+
 ![MOPAC logo](images/logo.png)
 
 # **M**olecular **O**rbital **PAC**kage
