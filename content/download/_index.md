@@ -5,12 +5,12 @@ description: "Download and installation instructions for MOPAC"
 
 The latest version of MOPAC can be downloaded as either a graphical installer or a compressed archive for Linux, Mac, or Windows.
 
-**latest version:** 23.2.2 (October 28, 2025)
+**latest version:** 23.2.3 (February 16, 2026)
 
 | Linux | Mac | Windows |
 |:-:|:-:|:-:|
-| {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.2/mopac-23.2.2-linux.run" >}} installer {{< /button >}} | {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.2/mopac-23.2.2-mac.dmg" >}} installer {{< /button >}} | {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.2/mopac-23.2.2-win.exe" >}} installer {{< /button >}} |
-| {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.2/mopac-23.2.2-linux.tar.gz" >}} archive {{< /button >}} | {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.2/mopac-23.2.2-mac.zip" >}} archive {{< /button >}} | {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.2/mopac-23.2.2-win.zip" >}} archive {{< /button >}} |
+| {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.3/mopac-23.2.3-linux.run" >}} installer {{< /button >}} | {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.3/mopac-23.2.3-mac.dmg" >}} installer {{< /button >}} | {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.3/mopac-23.2.3-win.exe" >}} installer {{< /button >}} |
+| {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.3/mopac-23.2.3-linux.tar.gz" >}} archive {{< /button >}} | {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.3/mopac-23.2.3-mac.zip" >}} archive {{< /button >}} | {{< button href="https://github.com/openmopac/mopac/releases/download/v23.2.3/mopac-23.2.3-win.zip" >}} archive {{< /button >}} |
 
 This version of MOPAC is distributed under the open-source [Apache 2.0 license](https://github.com/openmopac/mopac/blob/main/LICENSE),
 and the source code of MOPAC can be downloaded from its GitHub [repository](https://github.com/openmopac/mopac).
