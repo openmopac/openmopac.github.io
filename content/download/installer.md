@@ -11,7 +11,8 @@ It prompts the user for an installation directory and adds the MOPAC executable 
 
 The compressed archive (`.tar.gz` or `.zip`) contains the MOPAC executable in the `/bin` directory, which depends on shared libraries
 contained in the `/lib` directory on Linux/Mac or the `/bin` directory on Windows.
-If you want the MOPAC executable to be in your path, then you have to add it yourself using environment or registry variables.
+The Linux/Mac MOPAC executable will look for the shared library at the relative path `../lib`, so the relative locations of `/bin` and `/lib` must be preserved.
+If you want the MOPAC executable or library to be in your path, then you have to add them yourself using environment or registry variables.
 
 The open-source version of MOPAC does not require a password to activate, unlike the previous commercial versions of MOPAC.
 
