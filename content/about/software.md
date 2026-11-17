@@ -127,9 +127,9 @@ Software for QM/MM simulations that can use MOPAC as the QM method. MOPAC suppor
 
 Python scripts to post-process INDO/S calculations performed by MOPAC.
 
-### [Molaris-XG](https://laetro.usc.edu/molaris.html) (commercial)
+### Molaris-XG (commercial, no longer available)
 
-QM/MM simulation software developed by the Warshel research group, which can interface with MOPAC as the QM component of a QM/MM simulation.
+QM/MM simulation software developed by the Warshel research group, which could interface with MOPAC as the QM component of a QM/MM simulation. Its distribution site at the University of Southern California is no longer online.
 
 ### [MRCC](https://www.mrcc.hu/)
 
