@@ -22,6 +22,39 @@ A JSmol-compatible MOPAC output file with the `.html` file extension is produced
 For security reasons, modern web browser security prevents the use of local Javascript programs in HTML files.
 To use a local copy of JSmol with a MOPAC-generated HTML file, you should activate a local server from an active directory
 containing a JSmol installation in the `/jsmol` subdirectory. The HTML files should be located in this active directory or a subdirectory.
+If the page is opened directly from disk instead (a `file://` address), the JSmol panel stays empty; MOPAC 23.2.6 and later show a message explaining why instead.
+HTML files written by MOPAC 23.2 and earlier load JSmol from `../jsmol/` instead of `/jsmol/`, so they work only when they are exactly one folder below the folder holding `jsmol`.
+
+### Setting up JSmol
+
+Download the latest `Jmol-xx.x.x-binary.zip` from the [Jmol/JSmol website](https://sourceforge.net/projects/jmol/files/latest/download),
+open it, open the `jsmol.zip` inside it, and copy the `jsmol` folder out into a folder that sits above the folders where you run MOPAC.
+One copy is enough for all of your calculations, at any depth below it:
+```
+MOPAC/                  <- the local server's root ("active directory")
+  jsmol/                <- contains JSmol.min.js
+  project1/
+    molecule.html
+  project2/runs/today/
+    test.html
+```
+
+### Opening HTML files with the MOPAC JSmol launcher
+
+The MOPAC installers for 23.2.6 and later include a `jsmol-launcher` folder with scripts that do the rest for you.
+If you installed MOPAC another way (for example with conda), or have an older version, download the folder from [GitHub](https://github.com/openmopac/mopac/tree/main/jsmol-launcher); the scripts work with any version of MOPAC.
+The scripts find the folder holding `jsmol` above the HTML file, start a local server rooted there (or reuse one that is already running),
+and open the page in your default browser. No administrator rights are needed, nothing is written into your working folders,
+and the server only accepts connections from your own computer.
+
+- **Windows:** drag an HTML file onto `jsmol-launcher\windows\Open_MOPAC_HTML.cmd`, or choose that file under "Open with" for `.html` files.
+  `Stop_MOPAC_server.cmd` stops the server. Only PowerShell, which is part of Windows, is used.
+- **macOS and Linux:** run `jsmol-launcher/unix/open-mopac-html.sh molecule.html` (requires `python3`); `--stop` stops the server.
+
+If JSmol is kept elsewhere, set the environment variable `MOPAC_JSMOL_ROOT` to the folder containing `jsmol`.
+See the `README.md` in the `jsmol-launcher` folder for details.
+
+### Starting a local server by hand
 
 There are many ways to activate a local server. For example, a Python 3 installation can be used to activate a local server with the command:
 ```
