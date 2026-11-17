@@ -22,7 +22,7 @@ A JSmol-compatible MOPAC output file with the `.html` file extension is produced
 For security reasons, modern web browser security prevents the use of local Javascript programs in HTML files.
 To use a local copy of JSmol with a MOPAC-generated HTML file, you should activate a local server from an active directory
 containing a JSmol installation in the `/jsmol` subdirectory. The HTML files should be located in this active directory or a subdirectory.
-If the page is opened directly from disk instead (a `file://` address), the JSmol panel stays empty; MOPAC releases after 23.2.5 show a message explaining why instead.
+If the page is opened directly from disk instead (a `file://` address), the JSmol panel stays empty; MOPAC 23.2.6 and later show a message explaining why instead.
 HTML files written by MOPAC 23.2 and earlier load JSmol from `../jsmol/` instead of `/jsmol/`, so they work only when they are exactly one folder below the folder holding `jsmol`.
 
 ### Setting up JSmol
@@ -41,7 +41,7 @@ MOPAC/                  <- the local server's root ("active directory")
 
 ### Opening HTML files with the MOPAC JSmol launcher
 
-The MOPAC installers for releases after 23.2.5 include a `jsmol-launcher` folder with scripts that do the rest for you.
+The MOPAC installers for 23.2.6 and later include a `jsmol-launcher` folder with scripts that do the rest for you.
 If you installed MOPAC another way (for example with conda), or have an older version, download the folder from [GitHub](https://github.com/openmopac/mopac/tree/main/jsmol-launcher); the scripts work with any version of MOPAC.
 The scripts find the folder holding `jsmol` above the HTML file, start a local server rooted there (or reuse one that is already running),
 and open the page in your default browser. No administrator rights are needed, nothing is written into your working folders,
