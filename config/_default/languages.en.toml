@@ -4,7 +4,7 @@ languageDirection = "ltr"
 weight = 1
 
 title = "MOPAC"
-copyright = "<a href=https://molssi.org><img src=/images/molssi.png width=100></a> &copy; 2025 [The Molecular Sciences Software Institute](https://molssi.org)"
+copyright = "<a href=https://molssi.org><img src=/images/molssi.png width=100></a> &copy; 2025&ndash;2026 [The Molecular Sciences Software Institute](https://molssi.org)"
 
 [params]
   dateFormat = "2 January 2006"
